@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<r:RentLinx DataLinxVersion="1.2" xmlns:r="http://www.rentlinx.com">
+  <r:Properties>
+    <r:Property LocalPropertyID="123456">
+      <r:Description><![CDATA[877-RENT-PRO presents a rare Three bedroom Two Full bath with washer dryer in the unit. Plenty of natural light and NEW wood flooring in living room and bedrooms, Granite counter tops in the kitchen, Tiled bathrooms, Huge walk-in and mirrored closets, 9 foot HIGH ceiling, WASHER AND DRYER in unit! Large and Stunning Master BEDROOM! Pet Friendly. Call or text 877-RENT-PRO. Easy to show.]]></r:Description>
+      <r:Address>2114 Colby Ave</r:Address>
+      <r:City>Los Angeles</r:City>
+      <r:State>CA</r:State>
+      <r:Zip>90025</r:Zip>
+      <r:Zip4>6295</r:Zip4>
+      <r:YearBuilt>1999</r:YearBuilt>
+      <r:NumberUnits>1</r:NumberUnits>
+      <r:Latitude>34.0369770</r:Latitude>
+      <r:Longitude>-118.4454720</r:Longitude>
+      <r:WaitList>0</r:WaitList>
+      <r:Amenity AmenityID="2" />
+      <r:Amenity AmenityID="4" />
+      <r:Amenity AmenityID="6" />
+      <r:Amenity AmenityID="7" />
+      <r:Amenity AmenityID="10" />
+      <r:Amenity AmenityID="11" />
+      <r:Amenity AmenityID="23" />
+      <r:Amenity AmenityID="26" />
+      <r:Amenity AmenityID="28" />
+      <r:Amenity AmenityID="29" />
+      <r:Amenity AmenityID="30" />
+      <r:Amenity AmenityID="31" />
+      <r:Amenity AmenityID="32" />
+      <r:Amenity AmenityID="33" />
+      <r:Amenity AmenityID="37" />
+      <r:Amenity AmenityID="38" />
+      <r:Amenity AmenityID="45" />
+      <r:Amenity AmenityID="49" />
+      <r:Amenity AmenityID="50" />
+      <r:Amenity AmenityID="51" />
+      <r:Amenity AmenityID="52" />
+      <r:Amenity AmenityID="54" />
+      <r:Amenity AmenityID="56" />
+      <r:Amenity AmenityID="57" />
+      <r:Amenity AmenityID="58" />
+      <r:Amenity AmenityID="64" />
+      <r:Amenity AmenityID="68" />
+      <r:PropertyType>Apartments</r:PropertyType>
+      <r:PropertyType>Condo</r:PropertyType>
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5407803.jpg" ModificationDate="2014-06-02T18:44:20.84-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5407804.jpg" ModificationDate="2014-06-02T18:44:32.94-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5407805.jpg" ModificationDate="2014-06-02T18:44:41.567-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5407806.jpg" ModificationDate="2014-06-02T18:44:49.94-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5407807.jpg" ModificationDate="2014-06-02T18:44:58.35-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5407808.jpg" ModificationDate="2014-06-02T18:45:12.147-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5407809.jpg" ModificationDate="2014-06-02T18:45:21.367-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5407810.jpg" ModificationDate="2014-06-02T18:45:30.647-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5407811.jpg" ModificationDate="2014-06-02T18:45:38.61-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5407812.jpg" ModificationDate="2014-06-02T18:45:47.29-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5407813.jpg" ModificationDate="2014-06-02T18:45:55.37-05:00" />
+      <r:PropertyPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/5407814.jpg" ModificationDate="2014-06-02T18:46:03.627-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5407815.jpg" ModificationDate="2014-06-02T18:46:15.01-05:00" />
+      <r:Unit LocalUnitID="1637075">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>303</r:Name>
+        <r:IsOpenToLease>0</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>4795.0000</r:MinRent>
+        <r:MaxRent>4795.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>4</r:Bedrooms>
+        <r:FullBaths>2</r:FullBaths>
+        <r:HalfBaths>1</r:HalfBaths>
+        <r:MinSquareFeet>1700</r:MinSquareFeet>
+        <r:MaxSquareFeet>1700</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>1</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+      </r:Unit>
+      <r:Unit LocalUnitID="3749337">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>Room</r:Name>
+        <r:Description><![CDATA[ALL utilities paid, Room for rent in 4 Bedroom unit.]]></r:Description>
+        <r:IsOpenToLease>0</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>1295.0000</r:MinRent>
+        <r:MaxRent>1395.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>-1</r:Bedrooms>
+        <r:FullBaths>1</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>0</r:MinSquareFeet>
+        <r:MaxSquareFeet>0</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+      </r:Unit>
+      <r:Unit LocalUnitID="4529341">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>102</r:Name>
+        <r:IsOpenToLease>1</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>3695.0000</r:MinRent>
+        <r:MaxRent>3695.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>3</r:Bedrooms>
+        <r:FullBaths>2</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>1520</r:MinSquareFeet>
+        <r:MaxSquareFeet>1520</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+      </r:Unit>
+    </r:Property>
+    <r:Property LocalPropertyID="941767">
+      <r:Description><![CDATA[MOVE-in special!!! 
+
+Conveniently Located in Westwood by 877-RENT-PRO this 30 unit apartment building with Secured garage parking common Sundecks, Sauna, and Gym in the building. Call or text 877-RENT-PRO Easy to show!]]></r:Description>
+      <r:Address>1414 Greenfield Ave</r:Address>
+      <r:City>Los Angeles</r:City>
+      <r:State>CA</r:State>
+      <r:Zip>90025</r:Zip>
+      <r:Zip4>3465</r:Zip4>
+      <r:YearBuilt>1973</r:YearBuilt>
+      <r:NumberUnits>1</r:NumberUnits>
+      <r:Latitude>34.0527728</r:Latitude>
+      <r:Longitude>-118.4444203</r:Longitude>
+      <r:WaitList>0</r:WaitList>
+      <r:Amenity AmenityID="4" />
+      <r:Amenity AmenityID="6" />
+      <r:Amenity AmenityID="7" />
+      <r:Amenity AmenityID="12" />
+      <r:Amenity AmenityID="13" />
+      <r:Amenity AmenityID="14" />
+      <r:Amenity AmenityID="23" />
+      <r:Amenity AmenityID="26" />
+      <r:Amenity AmenityID="28" />
+      <r:Amenity AmenityID="30" />
+      <r:Amenity AmenityID="31" />
+      <r:Amenity AmenityID="32" />
+      <r:Amenity AmenityID="35">Laundry room In building</r:Amenity>
+      <r:Amenity AmenityID="37" />
+      <r:Amenity AmenityID="38" />
+      <r:Amenity AmenityID="42" />
+      <r:Amenity AmenityID="45" />
+      <r:Amenity AmenityID="49" />
+      <r:Amenity AmenityID="64" />
+      <r:Amenity AmenityID="68" />
+      <r:PropertyType>Apartments</r:PropertyType>
+      <r:PropertyType>Condo</r:PropertyType>
+      <r:PropertyType>Townhouse</r:PropertyType>
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5897650.jpg" ModificationDate="2014-07-28T17:43:06.313-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5897651.jpg" ModificationDate="2014-07-28T17:43:06.87-05:00" />
+      <r:PropertyPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/5897656.jpg" ModificationDate="2014-07-28T17:43:08.737-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/5897659.jpg" ModificationDate="2014-07-28T17:43:10.077-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/28955956.jpg" ModificationDate="2016-10-17T19:08:22.33-05:00">LR</r:PropertyPhoto>
+      <r:Unit LocalUnitID="1721708">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>305</r:Name>
+        <r:Description><![CDATA[Stunningly Remodeled Town-home Style with High Ceilings featuring two bedrooms two and half bath. New HARDWOOD floors throughout upper level with NEW carpet in Bedrooms in lower level. Granite counter-tops and Stainless Steele appliances in the kitchen. Small pets ok with Deposit.]]></r:Description>
+        <r:IsOpenToLease>0</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>3100.0000</r:MinRent>
+        <r:MaxRent>3100.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>2</r:Bedrooms>
+        <r:FullBaths>2</r:FullBaths>
+        <r:HalfBaths>1</r:HalfBaths>
+        <r:MinSquareFeet>1400</r:MinSquareFeet>
+        <r:MaxSquareFeet>1400</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+      </r:Unit>
+      <r:Unit LocalUnitID="1804013">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>106</r:Name>
+        <r:Description><![CDATA[BRAND New Hardwood floors throughout with tile in Kitchen and bathroom. Private yard]]></r:Description>
+        <r:IsOpenToLease>0</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>3250.0000</r:MinRent>
+        <r:MaxRent>3250.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>2</r:Bedrooms>
+        <r:FullBaths>2</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>1250</r:MinSquareFeet>
+        <r:MaxSquareFeet>1250</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+      </r:Unit>
+      <r:Unit LocalUnitID="1804016">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>210</r:Name>
+        <r:Description><![CDATA[Two bed two bath. ASK ABOUT OUR SPECIAL PRICING!]]></r:Description>
+        <r:IsOpenToLease>1</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>2945.0000</r:MinRent>
+        <r:MaxRent>2945.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>2</r:Bedrooms>
+        <r:FullBaths>2</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>1250</r:MinSquareFeet>
+        <r:MaxSquareFeet>1250</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+      </r:Unit>
+      <r:Unit LocalUnitID="2708536">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>110</r:Name>
+        <r:Description><![CDATA[Large 3 bedroom 2 bath first floor front facing unit. Wall to Wall carpet.]]></r:Description>
+        <r:IsOpenToLease>1</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>3950.0000</r:MinRent>
+        <r:MaxRent>3950.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>3</r:Bedrooms>
+        <r:FullBaths>2</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>1700</r:MinSquareFeet>
+        <r:MaxSquareFeet>1700</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25440679.jpg" ModificationDate="2016-07-21T12:10:35.533-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25440808.jpg" ModificationDate="2016-07-21T12:11:20.27-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441219.jpg" ModificationDate="2016-07-21T12:14:05.527-05:00" />
+        <r:UnitPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/25441255.jpg" ModificationDate="2016-07-21T12:14:40.007-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441256.jpg" ModificationDate="2016-07-21T12:14:40.373-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441809.jpg" ModificationDate="2016-07-21T12:18:30.6-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441904.jpg" ModificationDate="2016-07-21T12:19:04.8-05:00" />
+      </r:Unit>
+      <r:Unit LocalUnitID="3564073">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>308</r:Name>
+        <r:Description><![CDATA[Newly updated townhouse unit with Granite counter-tops and dazzling kitchen cabinets.]]></r:Description>
+        <r:IsOpenToLease>0</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>3200.0000</r:MinRent>
+        <r:MaxRent>3200.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>2</r:Bedrooms>
+        <r:FullBaths>2</r:FullBaths>
+        <r:HalfBaths>1</r:HalfBaths>
+        <r:MinSquareFeet>1250</r:MinSquareFeet>
+        <r:MaxSquareFeet>1250</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+      </r:Unit>
+    </r:Property>
+    <r:Property LocalPropertyID="1054933">
+      <r:Description><![CDATA[Large, Cozy, QUIET, and updated building in the heart of West LA features New Bamboo wood flooring, recess lighting, Updated kitchen with Modern Counter tops, Newer appliances, Alarm Ready, Washer and Dryer inside unit. Tons of Closet space. Large Balcony, Intercom Entry, Two Parking spaces, EASY TO SHOW!
+
+No Pets
+
+Water and Trash paid utilities.]]></r:Description>
+      <r:Address>1555 S Bundy Dr</r:Address>
+      <r:City>Los Angeles</r:City>
+      <r:State>CA</r:State>
+      <r:Zip>90025</r:Zip>
+      <r:Zip4>2600</r:Zip4>
+      <r:YearBuilt>1988</r:YearBuilt>
+      <r:NumberUnits>1</r:NumberUnits>
+      <r:Latitude>34.0395927</r:Latitude>
+      <r:Longitude>-118.4627172</r:Longitude>
+      <r:WaitList>0</r:WaitList>
+      <r:Amenity AmenityID="4" />
+      <r:Amenity AmenityID="6" />
+      <r:Amenity AmenityID="7" />
+      <r:Amenity AmenityID="12" />
+      <r:Amenity AmenityID="13" />
+      <r:Amenity AmenityID="23" />
+      <r:Amenity AmenityID="26" />
+      <r:Amenity AmenityID="28" />
+      <r:Amenity AmenityID="30" />
+      <r:Amenity AmenityID="31" />
+      <r:Amenity AmenityID="32" />
+      <r:Amenity AmenityID="33" />
+      <r:Amenity AmenityID="37" />
+      <r:Amenity AmenityID="38" />
+      <r:Amenity AmenityID="49" />
+      <r:Amenity AmenityID="50" />
+      <r:Amenity AmenityID="51" />
+      <r:Amenity AmenityID="52" />
+      <r:Amenity AmenityID="68" />
+      <r:PropertyType>Apartments</r:PropertyType>
+      <r:PropertyType>Condo</r:PropertyType>
+      <r:PropertyPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/25441633.jpg" ModificationDate="2016-07-21T12:17:26.58-05:00" />
+      <r:Unit LocalUnitID="1894761">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>206</r:Name>
+        <r:Description><![CDATA[2 Bed 2 Bath at rear of building]]></r:Description>
+        <r:IsOpenToLease>0</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>2595.0000</r:MinRent>
+        <r:MaxRent>2595.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>2</r:Bedrooms>
+        <r:FullBaths>2</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>1480</r:MinSquareFeet>
+        <r:MaxSquareFeet>1480</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>1</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25440550.jpg" ModificationDate="2016-07-21T12:08:00.917-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25440652.jpg" ModificationDate="2016-07-21T12:10:11.503-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25440894.jpg" ModificationDate="2016-07-21T12:12:09.217-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441060.jpg" ModificationDate="2016-07-21T12:12:54.077-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441135.jpg" ModificationDate="2016-07-21T12:13:19.847-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441415.jpg" ModificationDate="2016-07-21T12:15:55.6-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441503.jpg" ModificationDate="2016-07-21T12:16:33.3-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441512.jpg" ModificationDate="2016-07-21T12:16:38.46-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441552.jpg" ModificationDate="2016-07-21T12:16:54.417-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441781.jpg" ModificationDate="2016-07-21T12:18:23.17-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441789.jpg" ModificationDate="2016-07-21T12:18:24.42-05:00" />
+        <r:UnitPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/25441858.jpg" ModificationDate="2016-07-21T12:18:47.03-05:00" />
+      </r:Unit>
+      <r:Unit LocalUnitID="2054148">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>302</r:Name>
+        <r:Description><![CDATA[3 Bed 2 Bath at front of building]]></r:Description>
+        <r:IsOpenToLease>1</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>3690.0000</r:MinRent>
+        <r:MaxRent>3690.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>3</r:Bedrooms>
+        <r:FullBaths>2</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>1650</r:MinSquareFeet>
+        <r:MaxSquareFeet>1650</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25440541.jpg" ModificationDate="2016-07-21T12:07:49.62-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25440586.jpg" ModificationDate="2016-07-21T12:08:40.413-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25440595.jpg" ModificationDate="2016-07-21T12:09:08.933-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25440687.jpg" ModificationDate="2016-07-21T12:10:37.587-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25440988.jpg" ModificationDate="2016-07-21T12:12:22.5-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441017.jpg" ModificationDate="2016-07-21T12:12:32.83-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441030.jpg" ModificationDate="2016-07-21T12:12:37.903-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441034.jpg" ModificationDate="2016-07-21T12:12:39.98-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441448.jpg" ModificationDate="2016-07-21T12:16:14.97-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441462.jpg" ModificationDate="2016-07-21T12:16:20.793-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441544.jpg" ModificationDate="2016-07-21T12:16:53.137-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441601.jpg" ModificationDate="2016-07-21T12:17:08.723-05:00" />
+        <r:UnitPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/25441639.jpg" ModificationDate="2016-07-21T12:17:30.45-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441745.jpg" ModificationDate="2016-07-21T12:18:14.17-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441757.jpg" ModificationDate="2016-07-21T12:18:16.607-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441804.jpg" ModificationDate="2016-07-21T12:18:30.05-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441837.jpg" ModificationDate="2016-07-21T12:18:35.34-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441843.jpg" ModificationDate="2016-07-21T12:18:38.643-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25442060.jpg" ModificationDate="2016-07-21T12:20:09.697-05:00" />
+      </r:Unit>
+      <r:Unit LocalUnitID="3209703">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>306</r:Name>
+        <r:Description><![CDATA[NEWLY Updated. New wood Flooring, new appliances, new kitchen]]></r:Description>
+        <r:IsOpenToLease>0</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>2795.0000</r:MinRent>
+        <r:MaxRent>2795.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>2</r:Bedrooms>
+        <r:FullBaths>2</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>1500</r:MinSquareFeet>
+        <r:MaxSquareFeet>1500</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+        <r:UnitPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/25441506.jpg" ModificationDate="2016-07-21T12:16:34.397-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441948.jpg" ModificationDate="2016-07-21T12:19:21.503-05:00" />
+      </r:Unit>
+    </r:Property>
+    <r:Property LocalPropertyID="1733329">
+      <r:Description><![CDATA[BIG PRICE REDUCTION-Upscale and private building with only 1 unit per floor. Total of 4 units with only upper 3rd floor unit being available with elevator accessing directly in to the unit with private key.
+
+Italian porcelain tile, stainless steel appliances, Cesar stone counter top, floor to ceiling double pane glass windows on the entry and Living area with
+360 degree views from Hollywood sign, Downtown LA to Westside.
+
+Elevator opens with private key to the unit.
+
+Property is located on one of the most sought after corners on La Brea & 6th, walk across street to world famous La Brea Bakery and next door to one of LA's Finest dining restaurant "Republique"
+
+The unit is designed by Deco Home with high-end concept in mind.
+One bedroom and 1.5 bath. Laundry inside the unit, dish washer, and open floor plan with separate master bedroom. Window coverings throughout.
+Sundeck on the roof top with unobstructed city view.
+
+
+Can also be delivered furnished]]></r:Description>
+      <r:Address>600 S LA Brea Ave</r:Address>
+      <r:City>Los Angeles</r:City>
+      <r:State>CA</r:State>
+      <r:Zip>90036</r:Zip>
+      <r:Zip4>3580</r:Zip4>
+      <r:YearBuilt>2013</r:YearBuilt>
+      <r:NumberUnits>1</r:NumberUnits>
+      <r:Latitude>34.0646940</r:Latitude>
+      <r:Longitude>-118.3436760</r:Longitude>
+      <r:WaitList>0</r:WaitList>
+      <r:NoFee>1</r:NoFee>
+      <r:Amenity AmenityID="4" />
+      <r:Amenity AmenityID="6" />
+      <r:Amenity AmenityID="7" />
+      <r:Amenity AmenityID="10" />
+      <r:Amenity AmenityID="11" />
+      <r:Amenity AmenityID="23" />
+      <r:Amenity AmenityID="26" />
+      <r:Amenity AmenityID="28" />
+      <r:Amenity AmenityID="29" />
+      <r:Amenity AmenityID="30" />
+      <r:Amenity AmenityID="31" />
+      <r:Amenity AmenityID="32" />
+      <r:Amenity AmenityID="33" />
+      <r:Amenity AmenityID="37" />
+      <r:Amenity AmenityID="38" />
+      <r:Amenity AmenityID="45" />
+      <r:Amenity AmenityID="49" />
+      <r:Amenity AmenityID="50" />
+      <r:Amenity AmenityID="51" />
+      <r:Amenity AmenityID="68" />
+      <r:Amenity AmenityID="69" />
+      <r:Amenity AmenityID="71" />
+      <r:Amenity AmenityID="72" />
+      <r:Amenity AmenityID="73" />
+      <r:PropertyType>4Plex</r:PropertyType>
+      <r:PropertyType Primary="true">Apartments</r:PropertyType>
+      <r:PropertyType>Condo</r:PropertyType>
+      <r:PropertyType>CorporateSuite</r:PropertyType>
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/25441349.jpg" ModificationDate="2016-07-21T12:15:25.577-05:00" />
+      <r:PropertyPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/36184796.jpg" ModificationDate="2017-02-28T19:27:05.293-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36184805.jpg" ModificationDate="2017-02-28T19:27:18.95-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36184806.jpg" ModificationDate="2017-02-28T19:27:32.13-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36184807.jpg" ModificationDate="2017-02-28T19:27:46.867-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36184822.jpg" ModificationDate="2017-02-28T19:28:44.613-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36184972.jpg" ModificationDate="2017-02-28T19:32:19.37-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36184984.jpg" ModificationDate="2017-02-28T19:32:31.383-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36184985.jpg" ModificationDate="2017-02-28T19:32:39.74-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36184986.jpg" ModificationDate="2017-02-28T19:32:45.957-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36184987.jpg" ModificationDate="2017-02-28T19:33:11.163-06:00" />
+      <r:Unit LocalUnitID="2708178">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>TOP FLOOR</r:Name>
+        <r:IsOpenToLease>1</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>4995.0000</r:MinRent>
+        <r:MaxRent>4995.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>1</r:Bedrooms>
+        <r:FullBaths>1</r:FullBaths>
+        <r:HalfBaths>1</r:HalfBaths>
+        <r:MinSquareFeet>1010</r:MinSquareFeet>
+        <r:MaxSquareFeet>1010</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+      </r:Unit>
+    </r:Property>
+    <r:Property LocalPropertyID="1758274">
+      <r:Description><![CDATA[877-RENT-PRO is proud to present a peaceful, small building experience in a meticulously maintained quiet setting, nestled in the heart of Los Angeles' historic Windsor Village neighborhood, known for its fine examples of architecture, just around the corner from Harold Henry Park - the centerpiece of Windsor Village with its noble trees, picnic area and playground. 
+
+Conveniently located about five miles west of Downtown Los Angeles, with close proximity to the 101, 10 and 110 freeways, you are linked to anywhere in Los Angeles within minutes. The complex is keyed entry to tenants and authorized persons only, restricted access to the general public. The parking is gated and located inside the building structure.
+
+Call or Text for quick response!]]></r:Description>
+      <r:Address>855 S Windsor Blvd</r:Address>
+      <r:City>Los Angeles</r:City>
+      <r:State>CA</r:State>
+      <r:Zip>90005</r:Zip>
+      <r:Zip4>3768</r:Zip4>
+      <r:YearBuilt>1958</r:YearBuilt>
+      <r:NumberUnits>10</r:NumberUnits>
+      <r:Latitude>34.0583910</r:Latitude>
+      <r:Longitude>-118.3236600</r:Longitude>
+      <r:WaitList>0</r:WaitList>
+      <r:NoFee>1</r:NoFee>
+      <r:Amenity AmenityID="4" />
+      <r:Amenity AmenityID="6" />
+      <r:Amenity AmenityID="7" />
+      <r:Amenity AmenityID="10" />
+      <r:Amenity AmenityID="11" />
+      <r:Amenity AmenityID="23" />
+      <r:Amenity AmenityID="28" />
+      <r:Amenity AmenityID="29" />
+      <r:Amenity AmenityID="30" />
+      <r:Amenity AmenityID="31" />
+      <r:Amenity AmenityID="32" />
+      <r:Amenity AmenityID="37" />
+      <r:Amenity AmenityID="38" />
+      <r:Amenity AmenityID="45" />
+      <r:Amenity AmenityID="50" />
+      <r:Amenity AmenityID="68" />
+      <r:Amenity AmenityID="70" />
+      <r:Amenity AmenityID="71" />
+      <r:Amenity AmenityID="73" />
+      <r:PropertyType>Apartments</r:PropertyType>
+      <r:PropertyType>Flat</r:PropertyType>
+      <r:PropertyType Primary="true">GardenStyle</r:PropertyType>
+      <r:PropertyPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/25441211.jpg" ModificationDate="2016-07-21T12:14:01.707-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/25441212.jpg" ModificationDate="2016-07-21T12:14:02.393-05:00">image</r:PropertyPhoto>
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/25441318.jpg" ModificationDate="2016-07-21T12:15:13.767-05:00" />
+      <r:Unit LocalUnitID="2742106">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>9</r:Name>
+        <r:Description><![CDATA[Newly updated with BRAND NEW Hardwood flooring (carpet pictures) and New kitchen.]]></r:Description>
+        <r:IsOpenToLease>1</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>2495.0000</r:MinRent>
+        <r:MaxRent>2495.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>2</r:Bedrooms>
+        <r:FullBaths>2</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>1300</r:MinSquareFeet>
+        <r:MaxSquareFeet>1300</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25440984.jpg" ModificationDate="2016-07-21T12:12:21.84-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441264.jpg" ModificationDate="2016-07-21T12:14:43.247-05:00" />
+        <r:UnitPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/25441392.jpg" ModificationDate="2016-07-21T12:15:45.203-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441394.jpg" ModificationDate="2016-07-21T12:15:46.523-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441656.jpg" ModificationDate="2016-07-21T12:17:40.537-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441708.jpg" ModificationDate="2016-07-21T12:17:54.327-05:00" />
+        <r:UnitPhoto ImageUrl="http://photos.rentlinx.com/L600/25441741.jpg" ModificationDate="2016-07-21T12:18:11.293-05:00" />
+      </r:Unit>
+    </r:Property>
+    <r:Property LocalPropertyID="2045060">
+      <r:Description><![CDATA[With a stunning courtyard and interior updates, 877-RENT-PRO presents a Newly updated cottage style 1 bedroom 1 bath, very private with newly updated landscaping in courtyard. Granite counter tops, new hardwood flooring, new tile flooring in kitchen and bathroom. Tub/shower. A/C wall unit. Easy to show, call or text 877-RENT-PRO. Pet friendly.]]></r:Description>
+      <r:Address>1146 N Madison Ave</r:Address>
+      <r:City>Los Angeles</r:City>
+      <r:State>CA</r:State>
+      <r:Zip>90029</r:Zip>
+      <r:Zip4>1808</r:Zip4>
+      <r:YearBuilt>0</r:YearBuilt>
+      <r:NumberUnits>10</r:NumberUnits>
+      <r:Latitude>34.0924090</r:Latitude>
+      <r:Longitude>-118.2889400</r:Longitude>
+      <r:WaitList>0</r:WaitList>
+      <r:NoFee>1</r:NoFee>
+      <r:Amenity AmenityID="4" />
+      <r:Amenity AmenityID="6" />
+      <r:Amenity AmenityID="7" />
+      <r:Amenity AmenityID="23" />
+      <r:Amenity AmenityID="28" />
+      <r:Amenity AmenityID="29" />
+      <r:Amenity AmenityID="30" />
+      <r:Amenity AmenityID="31" />
+      <r:Amenity AmenityID="32" />
+      <r:Amenity AmenityID="37" />
+      <r:Amenity AmenityID="68" />
+      <r:Amenity AmenityID="70" />
+      <r:Amenity AmenityID="71" />
+      <r:Amenity AmenityID="73" />
+      <r:PropertyType>Apartments</r:PropertyType>
+      <r:PropertyType>Flat</r:PropertyType>
+      <r:PropertyType>GardenStyle</r:PropertyType>
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/25440995.jpg" ModificationDate="2016-07-21T12:12:24.25-05:00" />
+      <r:PropertyPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/25441197.jpg" ModificationDate="2016-07-21T12:13:54.513-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/25441399.jpg" ModificationDate="2016-07-21T12:15:48.7-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/25441475.jpg" ModificationDate="2016-07-21T12:16:23.977-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/25441600.jpg" ModificationDate="2016-07-21T12:17:08.113-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/25441724.jpg" ModificationDate="2016-07-21T12:18:02.823-05:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/25442067.jpg" ModificationDate="2016-07-21T12:20:13.113-05:00" />
+      <r:Unit LocalUnitID="3141846">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>1162</r:Name>
+        <r:Description><![CDATA[Newly updated with hardwood floors throughout and updated kitchen with granite counter tops.
+Call/text 877-RENT-PRO]]></r:Description>
+        <r:IsOpenToLease>1</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>1795.0000</r:MinRent>
+        <r:MaxRent>1795.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>1</r:Bedrooms>
+        <r:FullBaths>1</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>700</r:MinSquareFeet>
+        <r:MaxSquareFeet>700</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+      </r:Unit>
+    </r:Property>
+    <r:Property LocalPropertyID="2790367">
+      <r:Description><![CDATA[In Downtown Los Angeles 877-RENT-PRO presents a Newer building with spacious 2 Bedroom One (1) Bath apartments featuring laminate flooring, granite counter-tops, with balcony in each unit and 2 (tandem) parking spaces per unit. Brand-new appliances: side-by-side refrigerator, dishwasher, stove, microwave, central A/C-Heat unit. Pets welcome (25 pound restriction) plus additional $500 deposit. Easy to show CALL or TEXT 877-RENT-PRO]]></r:Description>
+      <r:Address>813 S Union Ave</r:Address>
+      <r:City>Los Angeles</r:City>
+      <r:State>CA</r:State>
+      <r:Zip>90017</r:Zip>
+      <r:Zip4>2279</r:Zip4>
+      <r:YearBuilt>2014</r:YearBuilt>
+      <r:NumberUnits>9</r:NumberUnits>
+      <r:Latitude>34.0519865</r:Latitude>
+      <r:Longitude>-118.2728983</r:Longitude>
+      <r:WaitList>0</r:WaitList>
+      <r:Amenity AmenityID="4" />
+      <r:Amenity AmenityID="6" />
+      <r:Amenity AmenityID="8" />
+      <r:Amenity AmenityID="10" />
+      <r:Amenity AmenityID="11" />
+      <r:Amenity AmenityID="23" />
+      <r:Amenity AmenityID="26" />
+      <r:Amenity AmenityID="28" />
+      <r:Amenity AmenityID="29" />
+      <r:Amenity AmenityID="30" />
+      <r:Amenity AmenityID="32" />
+      <r:Amenity AmenityID="37" />
+      <r:Amenity AmenityID="38" />
+      <r:Amenity AmenityID="45" />
+      <r:Amenity AmenityID="68" />
+      <r:Amenity AmenityID="72" />
+      <r:Amenity AmenityID="74" />
+      <r:PropertyType>Apartments</r:PropertyType>
+      <r:PropertyType>Flat</r:PropertyType>
+      <r:PropertyType>GardenStyle</r:PropertyType>
+      <r:PropertyPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/32425472.jpg" ModificationDate="2017-01-03T13:47:44.217-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/32425473.jpg" ModificationDate="2017-01-03T13:47:45.273-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/32425477.jpg" ModificationDate="2017-01-03T13:47:48.263-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/32425479.jpg" ModificationDate="2017-01-03T13:47:49.617-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/32425483.jpg" ModificationDate="2017-01-03T13:47:51.467-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/32425484.jpg" ModificationDate="2017-01-03T13:47:52-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/32425485.jpg" ModificationDate="2017-01-03T13:47:52.583-06:00" />
+      <r:Unit LocalUnitID="4254504">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>205</r:Name>
+        <r:Description><![CDATA[Second floor unit, Handicap accessible]]></r:Description>
+        <r:IsOpenToLease>1</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>1975.0000</r:MinRent>
+        <r:MaxRent>1975.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>2</r:Bedrooms>
+        <r:FullBaths>1</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>800</r:MinSquareFeet>
+        <r:MaxSquareFeet>800</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+      </r:Unit>
+    </r:Property>
+    <r:Property LocalPropertyID="3000998">
+      <r:Description><![CDATA[Presented by 877-RENT-PRO is a six (6) month SHORT-TERM rental in the heart of San Pedro is a newly upgraded two bedroom one bathroom, stunning kitchen with granite counter-tops and stainless-steel gas stove and dishwasher. Refrigerator not included, Laundry room with hookups-washer/dryer not included. Pet friendly. Easy to show- CALL or TEXT 877-RENT-PRO]]></r:Description>
+      <r:Address>574 W 14th St</r:Address>
+      <r:City>San Pedro</r:City>
+      <r:State>CA</r:State>
+      <r:Zip>90731</r:Zip>
+      <r:Zip4>4122</r:Zip4>
+      <r:YearBuilt>1951</r:YearBuilt>
+      <r:NumberUnits>1</r:NumberUnits>
+      <r:Latitude>33.7317750</r:Latitude>
+      <r:Longitude>-118.2896310</r:Longitude>
+      <r:WaitList>0</r:WaitList>
+      <r:Amenity AmenityID="2" />
+      <r:Amenity AmenityID="4" />
+      <r:Amenity AmenityID="6" />
+      <r:Amenity AmenityID="8" />
+      <r:Amenity AmenityID="10" />
+      <r:Amenity AmenityID="11" />
+      <r:Amenity AmenityID="17" />
+      <r:Amenity AmenityID="18" />
+      <r:Amenity AmenityID="19" />
+      <r:Amenity AmenityID="20" />
+      <r:Amenity AmenityID="26" />
+      <r:Amenity AmenityID="30" />
+      <r:Amenity AmenityID="31" />
+      <r:Amenity AmenityID="34" />
+      <r:Amenity AmenityID="37" />
+      <r:Amenity AmenityID="38" />
+      <r:Amenity AmenityID="45" />
+      <r:Amenity AmenityID="66" />
+      <r:Amenity AmenityID="67" />
+      <r:Amenity AmenityID="69" />
+      <r:Amenity AmenityID="70" />
+      <r:PropertyType Primary="true">House</r:PropertyType>
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36112964.jpg" ModificationDate="2017-02-27T15:27:48.753-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36112969.jpg" ModificationDate="2017-02-27T15:27:50.673-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36112971.jpg" ModificationDate="2017-02-27T15:27:50.8-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36112972.jpg" ModificationDate="2017-02-27T15:27:50.95-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36112975.jpg" ModificationDate="2017-02-27T15:27:53.28-06:00" />
+      <r:PropertyPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/36112977.jpg" ModificationDate="2017-02-27T15:27:56.507-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36112978.jpg" ModificationDate="2017-02-27T15:27:56.63-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36112979.jpg" ModificationDate="2017-02-27T15:27:57.517-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36112982.jpg" ModificationDate="2017-02-27T15:28:00.233-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36112989.jpg" ModificationDate="2017-02-27T15:28:01.22-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36112991.jpg" ModificationDate="2017-02-27T15:28:02.447-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36112993.jpg" ModificationDate="2017-02-27T15:28:02.603-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36112998.jpg" ModificationDate="2017-02-27T15:28:04.37-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36113000.jpg" ModificationDate="2017-02-27T15:28:04.657-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36113001.jpg" ModificationDate="2017-02-27T15:28:04.773-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36113006.jpg" ModificationDate="2017-02-27T15:28:07.157-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36113008.jpg" ModificationDate="2017-02-27T15:28:10.627-06:00" />
+      <r:PropertyPhoto ImageUrl="http://photos.rentlinx.com/L600/36113009.jpg" ModificationDate="2017-02-27T15:28:10.97-06:00" />
+      <r:Unit LocalUnitID="4503973">
+        <r:UnitType>specific</r:UnitType>
+        <r:IsOpenToLease>1</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>2345.0000</r:MinRent>
+        <r:MaxRent>2345.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>2</r:Bedrooms>
+        <r:FullBaths>1</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>1322</r:MinSquareFeet>
+        <r:MaxSquareFeet>1322</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+      </r:Unit>
+    </r:Property>
+    <r:Property LocalPropertyID="3150689">
+      <r:Description><![CDATA[In the heart of the Pico-Robertson neighborhood presented by 877-RENT-PRO is a large and spacious hardwooding flooring throughout, top floor,  four(4) bedroom, two(2) bathroom apartment with refrigerator, gas, stove, and washer-dryer in unit! Call or text 877-RENT-PRO. Pet friendly and easy to show.]]></r:Description>
+      <r:Address>1455 S Bedford St</r:Address>
+      <r:City>Los Angeles</r:City>
+      <r:State>CA</r:State>
+      <r:Zip>90035</r:Zip>
+      <r:Zip4>3501</r:Zip4>
+      <r:YearBuilt>1946</r:YearBuilt>
+      <r:NumberUnits>2</r:NumberUnits>
+      <r:Latitude>34.0525446</r:Latitude>
+      <r:Longitude>-118.3810841</r:Longitude>
+      <r:WaitList>0</r:WaitList>
+      <r:NoFee>1</r:NoFee>
+      <r:Amenity AmenityID="2" />
+      <r:Amenity AmenityID="4" />
+      <r:Amenity AmenityID="6" />
+      <r:Amenity AmenityID="7" />
+      <r:Amenity AmenityID="10" />
+      <r:Amenity AmenityID="11" />
+      <r:Amenity AmenityID="23" />
+      <r:Amenity AmenityID="28" />
+      <r:Amenity AmenityID="29" />
+      <r:Amenity AmenityID="30" />
+      <r:Amenity AmenityID="31" />
+      <r:Amenity AmenityID="33" />
+      <r:Amenity AmenityID="37" />
+      <r:Amenity AmenityID="38" />
+      <r:Amenity AmenityID="67" />
+      <r:Amenity AmenityID="70" />
+      <r:Amenity AmenityID="71" />
+      <r:Amenity AmenityID="72" />
+      <r:PropertyType>Apartments</r:PropertyType>
+      <r:PropertyType Primary="true">Duplex</r:PropertyType>
+      <r:PropertyPhoto Primary="true" ImageUrl="http://photos.rentlinx.com/L600/37754918.jpg" ModificationDate="2017-03-20T17:57:31.093-05:00" />
+      <r:Unit LocalUnitID="4723679">
+        <r:UnitType>specific</r:UnitType>
+        <r:Name>Top Floor</r:Name>
+        <r:IsOpenToLease>1</r:IsOpenToLease>
+        <r:RentIsBasedOnIncome>0</r:RentIsBasedOnIncome>
+        <r:MinRent>4245.0000</r:MinRent>
+        <r:MaxRent>4245.0000</r:MaxRent>
+        <r:MinDeposit>0.0000</r:MinDeposit>
+        <r:MaxDeposit>0.0000</r:MaxDeposit>
+        <r:Bedrooms>4</r:Bedrooms>
+        <r:FullBaths>2</r:FullBaths>
+        <r:HalfBaths>0</r:HalfBaths>
+        <r:MinSquareFeet>1800</r:MinSquareFeet>
+        <r:MaxSquareFeet>1800</r:MaxSquareFeet>
+        <r:IsMobilityAccessible>0</r:IsMobilityAccessible>
+        <r:IsVisionAccessible>0</r:IsVisionAccessible>
+        <r:IsHearingAccessible>0</r:IsHearingAccessible>
+      </r:Unit>
+    </r:Property>
+  </r:Properties>
+  <r:Extras />
+</r:RentLinx>

@@ -1,0 +1,804 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.inline {
+    display: inline !important;
+    float: left !important;
+}
+
+footer ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 30px 0px;
+    line-height: 30px;
+}
+
+footer ul li a {
+    line-height: 24px;
+    display: block;
+    color: #eeeeee;
+    font-size: 12px;
+}
+
+footer ul li a:hover {
+    line-height: 28px;
+    display: block;
+    color: #eeeeee;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+a.brandcolor {
+    color: #49b147;
+    text-decoration: none;
+}
+
+a.brandcolor:hover {
+    color: #49b147;
+    text-decoration: underline;
+}
+
+.text-cover {
+    position: absolute;
+    bottom: 20px;
+    color: #ffffff;
+    padding: 0px 30px;
+}
+
+hr.green {
+    width: 40px;
+    height: 4px;
+    background-color: #6bb645;
+}
+
+.navbar-nav > li > a {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.select a {
+    color: #ffffff !important;
+    padding-bottom: 5px;
+}
+
+.select a.active {
+    color: #ffffff !important;
+    border-bottom: 2px solid #6bb645 !important;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #ffffff;
+}
+
+.navigationli {
+    padding: 20px 35px;
+    color: #000000;
+}
+
+.padding0 {
+    padding: 0% !important;
+    background-color: none !important;
+    color: #000000 !important;
+}
+
+.navbar-nav > li > a:hover {
+    background: none !important;
+}
+
+.searchcontainer {
+    position: absolute !important;
+    top: 45% !important;
+    width: 100% !important;
+}
+
+.searchrow {
+    position: relative !important;
+    width: 980px !important;
+    margin: 0 auto!important;
+}
+
+.footer-subcribe {
+    position: relative;
+    left: 0px;
+    top: -40px;
+    float: right;
+    padding: 8px 12px;
+    font-size: 18px;
+    background-color: #49b147;
+    border: 0px;
+}
+
+.select {
+    padding: 6px !important;
+    width: 100% !important;
+}
+
+.border {
+    border: solid 1px #d3d3d3;
+}
+
+.border-bottom {
+    border-bottom: solid 1px #d3d3d3;
+}
+
+
+/********* margin css ********************/
+
+.margin-top10 {
+    margin-top: 10px !important;
+}
+
+.margin-top20 {
+    margin-top: 20px !important;
+}
+
+.margin-top40 {
+    margin-top: 40px !important;
+}
+
+.margin-top60 {
+    margin-top: 60px !important;
+}
+
+.margin-bottom10 {
+    margin-bottom: 20px !important;
+}
+
+.margin-bottom20 {
+    margin-bottom: 20px !important;
+}
+
+.margin-bottom40 {
+    margin-bottom: 40px !important;
+}
+
+.margin-bottom60 {
+    margin-bottom: 60px !important;
+}
+
+.margin-bottom0 {
+    margin-bottom: 0px !important;
+}
+
+.margin-left20 {
+    margin-left: 20px !important;
+}
+
+.margin-left40 {
+    margin-left: 40px !important;
+}
+
+.margin-left60 {
+    margin-left: 60px !important;
+}
+
+.margin-left0 {
+    margin-left: 0px !important;
+}
+
+.margin-right10 {
+    margin-right: 10px !important;
+}
+
+.margin-right20 {
+    margin-right: 20px !important;
+}
+
+.margin-right40 {
+    margin-right: 40px !important;
+}
+
+.margin-right60 {
+    margin-right: 60px !important;
+}
+
+.margin-right0 {
+    margin-right: 0px !important;
+}
+
+.margin10 {
+    margin: 10px !important;
+}
+
+.margin20 {
+    margin: 20px !important;
+}
+
+.margin40 {
+    margin: 40px;
+}
+
+.margin60 {
+    margin: 60px;
+}
+
+.margin0auto {
+    margin: 0 auto !important;
+}
+
+.margin-none {
+    margin: 0px !important;
+}
+
+.borderr {
+    border-top-left-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+}
+
+.borderl {
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+}
+
+.zindex {
+    z-index: 8888 !important;
+}
+
+
+/********* margin end css ********************/
+
+
+/********* padding css ********************/
+
+.padding-top20 {
+    padding-top: 20px !important;
+}
+
+.padding-top40 {
+    padding-top: 40px !important;
+}
+
+.padding-top60 {
+    padding-top: 60px !important;
+}
+
+.padding-bottom20 {
+    padding-bottom: 20px !important;
+}
+
+.padding-bottom40 {
+    padding-bottom: 40px !important;
+}
+
+.padding-bottom60 {
+    padding-bottom: 60px !important;
+}
+
+.padding-left20 {
+    padding-left: 20px !important;
+}
+
+.padding-left30 {
+    padding-left: 30px !important;
+}
+
+.padding-left40 {
+    padding-left: 40px !important;
+}
+
+.padding-left60 {
+    padding-left: 60px !important;
+}
+
+.padding5 {
+    padding: 5px !important;
+}
+
+.padding10 {
+    padding: 10px !important;
+}
+
+.padding20 {
+    padding: 20px !important;
+}
+
+.padding25 {
+    padding: 25px !important;
+}
+
+.padding40 {
+    padding: 40px !important;
+}
+
+.padding60 {
+    padding: 60px !important;
+}
+
+.padding0 {
+    padding: 0px !important;
+}
+
+.paddingtb {
+    padding: 6px 20px !important;
+}
+
+.paddingtb15 {
+    padding: 15px 0px !important;
+}
+
+.paddingtb20 {
+    padding: 20px 10px !important;
+}
+
+.book-wrapper1 {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 19px 0px rgba(50, 50, 50, 0.32);
+    border-radius: 10px;
+}
+
+.book-wrapper1 img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+/********* padding end css ********************/
+
+.navbar-default .navbar-nav > li > a {
+    padding: 20px 40px !important;
+}
+
+
+/********* Background color css ********************/
+
+.white-bg {
+    background-color: #ffffff !important;
+}
+
+.dark-grey {
+    background-color: #2e2f32 !important;
+}
+
+.nav-grey {
+    background-color: #4c4c4c !important;
+}
+
+.black {
+    background-color: #242527 !important;
+}
+
+.light-grey {
+    background-color: #F8FAFD !important;
+}
+
+.bg-filer {
+    background-color: #f7f7f7;
+}
+
+.grey {
+    background-color: #eaebee !important;
+}
+
+.green {
+    background-color: #80c847 !important;
+}
+
+.red {
+    background-color: #ff5454 !important;
+}
+
+.yellow {
+    background-color: #f5b534 !important;
+}
+
+.footer-dark {
+    background-color: #4e5054 !important;
+}
+
+.blue {
+    background-color: #294070 !important;
+}
+
+.tint-grey {
+    background-color: #ecf2f6 !important;
+}
+
+.buttongrey {
+    background-color: #bcc0ca !important;
+}
+
+
+/********* Background end color css ********************/
+
+
+/********* text color css ********************/
+
+.white-txt {
+    color: #ffffff !important;
+}
+
+.dark-grey-txt {
+    color: #474747 !important;
+}
+
+.black-txt {
+    color: #000000 !important;
+}
+
+.grey-txt {
+    color: #666666 !important;
+}
+
+.light-grey-txt {
+    color: #a7a7a8 !important;
+}
+
+.footerhead-txt {
+    color: #f7f7f7 !important;
+}
+
+.green-txt {
+    color: #49b147 !important;
+}
+
+.red-txt {
+    color: #ff5454 !important;
+}
+
+.yellow-txt {
+    color: #ffbe1a !important;
+}
+
+.blue-txt {
+    color: #294070 !important;
+}
+
+.navtxt {
+    color: #9d9d9d !important;
+}
+
+.letter-spacing {
+    letter-spacing: 4px;
+}
+
+.elipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 14px;
+}
+
+#price-slider {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+}
+
+#price-slider input {
+    width: 90px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#slider-range,
+#sqft {
+    position: relative;
+    margin: auto;
+    width: 95%;
+    height: 4px;
+    /* border: solid 1px #bebebe; */
+    border-radius: 5px;
+    background-color: #bebebe;
+}
+
+#slider-range .ui-slider-handle,
+#sqft .ui-slider-handle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: -8px;
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: grey 0px 1px 5px 0px;
+}
+
+#slider-range .ui-slider-range,
+#sqft .ui-slider-range {
+    background: #46d260;
+    padding: 2px;
+    position: absolute;
+}
+
+#slider-range .ui-corner-all,
+#sqft .ui-corner-all {
+    border-radius: 15px;
+}
+
+
+/********* text color end css ********************/
+
+.borderlrb {
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+}
+
+.borderradius {
+    border-radius: 10px !important;
+}
+
+.borderradius5 {
+    border-radius: 5px !important;
+}
+
+.borderradiusnone {
+    border-radius: 0px !important;
+}
+
+.bordernone {
+    border: none !important;
+}
+
+.height100 {
+    height: 100% !important;
+}
+
+.control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control__indicator {
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    height: 20px;
+    width: 20px;
+    background: none;
+    border: 1px solid #7e7e80;
+    border-radius: 2px;
+}
+
+.control--radio .control__indicator {
+    border-radius: 50%;
+}
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {}
+
+.control input:checked ~ .control__indicator {
+    background-color: #49b147;
+}
+
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+    background-color: #49b147;
+}
+
+.control input:disabled ~ .control__indicator {
+    background: none;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.control__indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.control input:checked ~ .control__indicator:after {
+    display: block;
+}
+
+.control--checkbox .control__indicator:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+    border-color: #7b7b7b;
+}
+
+.control--radio .control__indicator:after {
+    left: 7px;
+    top: 7px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.control--radio input:disabled ~ .control__indicator:after {
+    background: #7b7b7b;
+}
+
+
+/********* float css ********************/
+
+
+/********* font css ********************/
+
+.font24 {
+    font-size: 24px !important;
+}
+
+.font14 {
+    font-size: 14px !important;
+}
+
+.font11 {
+    font-size: 11px !important;
+}
+
+.font12p {
+    font-size: 12px !important;
+}
+
+.font16 {
+    font-size: 16px !important;
+}
+
+.font18 {
+    font-size: 18px !important;
+}
+
+.font20 {
+    font-size: 20px !important;
+}
+
+.font30 {
+    font-size: 30px !important;
+}
+
+.font50 {
+    font-size: 50px !important;
+}
+
+.fontbold {
+    font-weight: bold;
+}
+
+.borderbtn {
+    border: solid 1px lightgrey;
+}
+
+.drop-shadow {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.center-div {
+    top: 30%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 350px;
+}
+
+.full-div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg.png);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    background-position: center top;
+}
+
+.float-none {
+    float: none !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.width85 {
+    width: 85% !important;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+
+/* Portrait and Landscape */
+
+@media screen and (max-width: 640px) {
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        background-color: #222 !important;
+    }
+    .navbar-toggle {
+        background-color: #222 !important;
+    }
+    .glyphicon-hand-left {
+        /* IE 9 */
+        -webkit-transform: rotate(90deg) !important;
+        /* Chrome, Safari, Opera */
+        transform: rotate(90deg) !important;
+    }
+    .navigationli {
+        padding: 20px 18px !important;
+        color: #000000;
+    }
+}
+
+
+/* Portrait and Landscape */
+
+@media screen and (max-width: 768px) {
+    .nav > li {
+        position: relative;
+        display: block;
+        text-align: center !important;
+    }
+    .searchrow {
+        position: relative !important;
+        width: 100% !important;
+        margin: 0 auto!important;
+    }
+    .navigationli {
+        padding: 20px 18px !important;
+        color: #000000;
+    }
+}
+
+@media only screen and (max-width: 760px) and (min-width: 320px) {
+    .searchrow {
+        position: relative !important;
+        width: 100% !important;
+        margin: 0 auto!important;
+    }
+    .borderr {
+        border-radius: 25px !important;
+        margin-bottom: 25px !important;
+    }
+    .borderl {
+        border-radius: 25px !important;
+        margin-bottom: 25px !important;
+    }
+    .borderradiusnone {
+        border-radius: 25px !important;
+        margin-bottom: 25px !important;
+    }
+    .searchcontainer {
+        position: absolute !important;
+        top: 25% !important;
+        width: 100% !important;
+    }
+    .navigationli {
+        padding: 0px !important;
+        color: #000000;
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: 344px !important;
+        ;
+    }
+}
