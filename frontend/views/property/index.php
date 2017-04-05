@@ -283,7 +283,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <span><b> Studios2</b> </span>
                                 <p class="elipsis">
                                     '.$model->description.'
-                                    <a href="#" style="display: block; color: #49b147;"> Read More </a>
+                                    <a href="'.Yii::$app->urlManager->createUrl(['property/view','id'=>$model->id]).'" style="display: block; color: #49b147;"> Read More </a>
                                 </p>
                                 <span class="fontbold font20 blue-txt">$'.number_format($model->minrent).'</span>
                             </div>
