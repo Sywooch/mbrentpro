@@ -155,4 +155,9 @@ class Properties extends \yii\db\ActiveRecord
         //print_r($model);exit;
         return $model;
     }
+
+    public function getAmenity()
+    {
+        return $this->hasMany(Amenities::className(), ['propertyid' => 'propertyid']);
+    }
 }

@@ -45,4 +45,9 @@ class Amenities extends \yii\db\ActiveRecord
             'isexists' => 'Isexists',
         ];
     }
+
+    public function getProperty()
+    {
+        return $this->hasOne(Properties::className(), ['propertyid' => 'propertyid']);
+    }
 }

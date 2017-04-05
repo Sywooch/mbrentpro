@@ -18,6 +18,10 @@ footer ul {
     line-height: 30px;
 }
 
+.borderb {
+    border-bottom: solid 1px #68686a;
+}
+
 footer ul li a {
     line-height: 24px;
     display: block;
@@ -269,6 +273,10 @@ hr.green {
     padding-bottom: 20px !important;
 }
 
+.padding-bottom10 {
+    padding-bottom: 20px !important;
+}
+
 .padding-bottom40 {
     padding-bottom: 40px !important;
 }
@@ -409,6 +417,10 @@ hr.green {
     background-color: #bcc0ca !important;
 }
 
+.mdgrey {
+    background-color: #4c4c4c !important;
+}
+
 
 /********* Background end color css ********************/
 
@@ -453,6 +465,10 @@ hr.green {
 
 .blue-txt {
     color: #294070 !important;
+}
+
+.light-blue {
+    color: #106dba;
 }
 
 .navtxt {
@@ -542,6 +558,10 @@ hr.green {
 
 .bordernone {
     border: none !important;
+}
+
+.path {
+    fill: #ffffff;
 }
 
 .height100 {
