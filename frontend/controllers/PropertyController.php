@@ -43,7 +43,7 @@ class PropertyController extends Controller
         $newarr = [];
         foreach ($dataProvider->getModels() as $model) {
             //if($this->distance(17.670298,75.915255,17.6701965,75.9155166,"K")<3)
-            echo "Distance in KM: ".$this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K")."<br>";
+            //echo "Distance in KM: ".$this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K")."<br>";
             if($this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K") < 15000)
             {
                 $newarr[]=$model;
@@ -52,18 +52,52 @@ class PropertyController extends Controller
         }
         $provider = new ArrayDataProvider([
             'allModels' => $newarr,
-            // 'sort' => [
-            //     'attributes' => ['id', 'username', 'email'],
-            // ],
-            // 'pagination' => [
-            //     'pageSize' => 10,
-            // ],
+            /*'sort' => [
+                'attributes' => ['id', 'username', 'email'],
+            ],
+            'pagination' => [
+                'pageSize' => 10,
+            ],*/
         ]);
         //echo "<pre>"; print_r($newarr);exit;
         return $this->render('index', [
             'searchModel' => $searchModel,
-            'dataProvider' => $provider,
+            'dataProvider' => $dataProvider,
         ]);
+    }
+    public function actionAjaxIndex()
+    {
+        $request = Yii::$app->request;
+        if ($request->isAjax)
+        {
+            //echo "<pre>"; print_r(Yii::$app->request->queryParams);exit;
+            $searchModel = new PropertiesSearch();
+            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+            //echo "<pre>"; print_r($dataProvider);exit;
+
+            /*$newarr = [];
+            foreach ($dataProvider->getModels() as $model) {
+                if($this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K") < 15000)
+                {
+                    $newarr[]=$model;
+                    //echo $this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K")."<br>";
+                }
+            }*/
+            //$provider = new ArrayDataProvider([
+                //'allModels' => $newarr,
+                /*'sort' => [
+                    'attributes' => ['id', 'username', 'email'],
+                ],
+                'pagination' => [
+                    'pageSize' => 10,
+                ],*/
+            //]);
+            //echo "<pre>"; print_r($dataProvider);exit;
+            return $this->renderPartial('ajax-index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
+        }
     }
 
     /**

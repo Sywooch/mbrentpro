@@ -51,10 +51,11 @@ class PropertiesSearch extends Properties
         ]);
 
         $this->load($params);
+        //echo "<pre>"; print_r(Yii::$app->request->queryParams);exit;
 
         if (!$this->validate()) {
             // uncomment the following line if you do not want to return any records when validation fails
-            // $query->where('0=1');
+            $query->where('0=1');
             return $dataProvider;
         }
 
@@ -71,8 +72,8 @@ class PropertiesSearch extends Properties
             'unitid' => $this->unitid,
             'isopentolease' => $this->isopentolease,
             'rentisbasedonincome' => $this->rentisbasedonincome,
-            'minrent' => $this->minrent,
-            'maxrent' => $this->maxrent,
+            //'minrent' => $this->minrent,
+            //'maxrent' => $this->maxrent,
             'mindeposit' => $this->mindeposit,
             'maxdeposit' => $this->maxdeposit,
             'bedrooms' => $this->bedrooms,
@@ -102,18 +103,22 @@ class PropertiesSearch extends Properties
             'usertype' => $this->usertype,
         ]);
 
-        $query->andFilterWhere(['like', 'description', $this->description])
-            ->andFilterWhere(['like', 'address', $this->address])
-            ->andFilterWhere(['like', 'city', $this->city])
-            ->andFilterWhere(['like', 'state', $this->state])
-            ->andFilterWhere(['like', 'zip', $this->zip])
-            ->andFilterWhere(['like', 'zip4', $this->zip4])
-            ->andFilterWhere(['like', 'unittype', $this->unittype])
-            ->andFilterWhere(['like', 'unitname', $this->unitname])
-            ->andFilterWhere(['like', 'unitdescription', $this->unitdescription])
-            ->andFilterWhere(['like', 'rejectreason', $this->rejectreason])
-            ->andFilterWhere(['like', 'youtube_url', $this->youtube_url])
-            ->andFilterWhere(['=', 'approvalstatus', 1]);
+        //->andFilterWhere(['like', 'description', $this->description])
+            //->andFilterWhere(['like', 'address', $this->address])
+            //->andFilterWhere(['like', 'city', $this->city])
+            //->andFilterWhere(['like', 'state', $this->state])
+            //->andFilterWhere(['like', 'zip', $this->zip])
+            //->andFilterWhere(['like', 'zip4', $this->zip4])
+            //->andFilterWhere(['like', 'unittype', $this->unittype])
+            //->andFilterWhere(['like', 'unitname', $this->unitname])
+            //->andFilterWhere(['like', 'unitdescription', $this->unitdescription])
+            //->andFilterWhere(['like', 'rejectreason', $this->rejectreason])
+            //->andFilterWhere(['like', 'youtube_url', $this->youtube_url])
+            //->andFilterWhere(['>=', 'minrent', $this->minrent])
+        $query->andFilterWhere(['between', 'minrent', $this->minrent, $this->maxrent]);;
+        $query->andFilterWhere(['=', 'approvalstatus', 1]);
+
+            //echo "<pre>"; print_r($query);exit;
 
         return $dataProvider;
     }

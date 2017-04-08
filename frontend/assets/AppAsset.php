@@ -23,11 +23,13 @@ class AppAsset extends AssetBundle
         'css/swiper.min.css',
     ];
     public $js = [
-        'js/aos.js',
+        'jquery-1.12.4.js',
+        'https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js',
         'js/bootstrap.js',
-        'js/npm.js',
-        'js/owl.carousel.js',
+        //'js/npm.js',
         'js/swiper.min.js',
+        'js/owl.carousel.js',
+        'js/aos.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

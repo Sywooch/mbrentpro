@@ -79,21 +79,21 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container-fluid grey">
         <div class="container paddingtb20">
 
-        <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
+        <?php echo $this->render('_search', ['model' => $searchModel]); ?>
 
-            <div class="col-md-3 col-sm-4 col-xs-12 bg-filer  borderradius border">
+            <!-- <div class="col-md-3 col-sm-4 col-xs-12 bg-filer  borderradius border">
                 <div class="row ">
                     <h1 class="font18 padding20 margin-none border-bottom">
-                        <b class="blue-txt"> Refine search</b> <a class="font12p text-uppercase black-txt pull-right padding5" href="#"> Clrea All</a>
+                        <b class="blue-txt"> Refine search</b> <a class="font12p text-uppercase black-txt pull-right padding5" href="<?= \yii\helpers\Url::to(['property/index']);?>"> Clear All</a>
                         </h1>
                     <div class="col-md-12 col-sm-12 col-xs-12 padding-bottom20">
                         <h3 class="font16 margin-none paddingtb15">  <b class="blue-txt">Price </b> </h3>
                         <p>
 
-                            <input type="text" id="amount" class="blue-txt" readonly="" style="border:0; font-weight:bold;     background: none;">
+                            <input type="text" id="amount" class="blue-txt" readonly="" style="border:0; font-weight:bold;background: none;">
                         </p>
 
-                        <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 17%; width: 50%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 17%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 67%;"></span></div>
+                        <div id="slider-range"></div>
                     </div>
 
 
@@ -209,16 +209,12 @@ $this->params['breadcrumbs'][] = $this->title;
                             <input type="text" id="amountsqft" class="blue-txt" readonly="" style="border:0; font-weight:bold;     background: none;">
                         </p>
 
-                        <div id="sqft" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 17%; width: 50%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 17%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 67%;"></span></div>
-
-
-
-
+                        <div id="sqft"></div>
                     </div>
 
 
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -227,73 +223,77 @@ $this->params['breadcrumbs'][] = $this->title;
 'enablePushState' => false,
 'enableReplaceState' => false,
 ]); ?>
-<?= ListView::widget([
-        'pager' => ['class' => \kop\y2sp\ScrollPager::className(), 'enabledExtensions'=> Array( \kop\y2sp\ScrollPager::EXTENSION_TRIGGER, \kop\y2sp\ScrollPager::EXTENSION_SPINNER, \kop\y2sp\ScrollPager::EXTENSION_NONE_LEFT, \kop\y2sp\ScrollPager::EXTENSION_PAGING ),'triggerOffset'=>10],
-        'dataProvider' => $dataProvider,
-        'summary'=>'<div class="row padding10">
-                    <div class="col-md-9 col-sm-9 col-xs-12">
-                        Showing {begin}-{end} out of {totalCount} properties.
-                    </div>
+<div id="projects_section">
+<?php echo $this->render('ajax-index', ['dataProvider' => $dataProvider]); ?>
+<?php 
+ // ListView::widget([
+ //        'pager' => ['class' => \kop\y2sp\ScrollPager::className(), 'enabledExtensions'=> Array( \kop\y2sp\ScrollPager::EXTENSION_TRIGGER, \kop\y2sp\ScrollPager::EXTENSION_SPINNER, \kop\y2sp\ScrollPager::EXTENSION_NONE_LEFT, \kop\y2sp\ScrollPager::EXTENSION_PAGING ),'triggerOffset'=>10],
+ //        'dataProvider' => $dataProvider,
+ //        'summary'=>'<div class="row padding10">
+ //                    <div class="col-md-9 col-sm-9 col-xs-12">
+ //                        Showing {begin}-{end} out of {totalCount} properties.
+ //                    </div>
 
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <select class="select borderradius5 padding5">
-                            <option>
-                                Sorty By
-                            </option>
+ //                    <div class="col-md-3 col-sm-3 col-xs-12">
+ //                        <select class="select borderradius5 padding5">
+ //                            <option>
+ //                                Sorty By
+ //                            </option>
 
-                            <option>
-                                Date
-                            </option>
+ //                            <option>
+ //                                Date
+ //                            </option>
 
-                        </select>
+ //                        </select>
 
-                    </div>
+ //                    </div>
 
-                </div>',
-        //'summaryOptions' => [],
-        //'itemOptions' => ['class' => 'item'],
-        'itemOptions' => ['class' => 'item col-md-4 col-sm-2 col-xs-12 margin-bottom20', "data-aos"=>"fade-down", "data-aos-easing"=>"linear","data-aos-duration"=>"500"],
-        'itemView' => function ($model, $key, $index, $widget) {
-            $photoModel = $model->getOnePropertyPhoto($model->propertyid);
-            /*if($photoModel)
-            {
-                $return = '<div class="book-wrapper1">
-                        <img src="'.$photoModel->imageurl.'" class="full-width">
-                        <div class="card-wrapper">
-                            <div class="row width85 padding-bottom20" style=" margin: 0 auto;">
-                                <h1 class="font16 blue-txt margin-bottom0">'.$model->address.'</h1>
-                                <span><b> Studios2</b> </span>
-                                <p class="elipsis">
-                                    '.$model->description.'
-                                    <a href="#" style="display: block; color: #49b147;"> Read More </a>
-                                </p>
-                                <span class="fontbold font20 blue-txt">$'.number_format($model->minrent).'</span>
-                            </div>
-
-
-                        </div>
-                    </div>';
-            }
-            else*/
-            $return = '<div class="book-wrapper1">
-                        <img src="images/house.jpg" class="full-width">
-                        <div class="card-wrapper">
-                            <div class="row width85 padding-bottom20" style=" margin: 0 auto;">
-                                <h1 class="font16 blue-txt margin-bottom0">'.$model->address.'</h1>
-                                <span><b> Studios2</b> </span>
-                                <p class="elipsis">
-                                    '.$model->description.'
-                                    <a href="'.Yii::$app->urlManager->createUrl(['property/view','id'=>$model->id]).'" style="display: block; color: #49b147;"> Read More </a>
-                                </p>
-                                <span class="fontbold font20 blue-txt">$'.number_format($model->minrent).'</span>
-                            </div>
+ //                </div>',
+ //        //'summaryOptions' => [],
+ //        //'itemOptions' => ['class' => 'item'],
+ //        'itemOptions' => ['class' => 'item col-md-4 col-sm-2 col-xs-12 margin-bottom20', "data-aos"=>"fade-down", "data-aos-easing"=>"linear","data-aos-duration"=>"500"],
+ //        'itemView' => function ($model, $key, $index, $widget) {
+ //            $photoModel = $model->getOnePropertyPhoto($model->propertyid);
+ //            if($photoModel)
+ //            {
+ //                $return = '<div class="book-wrapper1">
+ //                        <img src="'.$photoModel->imageurl.'" class="full-width">
+ //                        <div class="card-wrapper">
+ //                            <div class="row width85 padding-bottom20" style=" margin: 0 auto;">
+ //                                <h1 class="font16 blue-txt margin-bottom0">'.$model->address.'</h1>
+ //                                <span><b> Studios2</b> </span>
+ //                                <p class="elipsis">
+ //                                    '.$model->description.'
+ //                                    <a href="#" style="display: block; color: #49b147;"> Read More </a>
+ //                                </p>
+ //                                <span class="fontbold font20 blue-txt">$'.number_format($model->minrent).'</span>
+ //                            </div>
 
 
-                        </div>
-                    </div>';
-            return $return;
-        },
-    ]);?>
+ //                        </div>
+ //                    </div>';
+ //            }
+ //            else
+ //            $return = '<div class="book-wrapper1">
+ //                        <img src="images/house.jpg" class="full-width">
+ //                        <div class="card-wrapper">
+ //                            <div class="row width85 padding-bottom20" style=" margin: 0 auto;">
+ //                                <h1 class="font16 blue-txt margin-bottom0">'.$model->address.'</h1>
+ //                                <span><b> Studios2</b> </span>
+ //                                <p class="elipsis">
+ //                                    '.$model->description.'
+ //                                    <a href="'.Yii::$app->urlManager->createUrl(['property/view','id'=>$model->id]).'" style="display: block; color: #49b147;"> Read More </a>
+ //                                </p>
+ //                                <span class="fontbold font20 blue-txt">$'.number_format($model->minrent).'</span>
+ //                            </div>
+
+
+ //                        </div>
+ //                    </div>';
+ //            return $return;
+ //        },
+ //    ]);
+    ?>
     
     <?php
         // $pages = new Pagination([ 'pageSize' => 2 ,'totalCount'=>$dataProvider->getTotalCount()]);
@@ -306,7 +306,7 @@ $this->params['breadcrumbs'][] = $this->title;
         //     'maxButtonCount'=> 0,
         //         ]);
             ?>
-
+ </div>
 <?php Pjax::end(); ?>
                 
 
@@ -322,3 +322,64 @@ $this->params['breadcrumbs'][] = $this->title;
     <!-- <p>
         <?php //Html::a('Create Properties', ['create'], ['class' => 'btn btn-success']) ?>
     </p> -->
+<?php 
+$this->registerJs('
+    $(function () {
+        $("input, select").on("change", function(){
+            send();
+        })
+        
+    });
+    $(function () {
+        $("#slider-range").slider({
+            orientation: "horizontal"
+            , range: true
+            , min: 100
+            , max: 1000
+            , values: [117, 599]
+            , stop: function (event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                $("#propertiessearch-minrent").val(ui.values[0]);
+                $("#propertiessearch-maxrent").val(ui.values[1]);
+                send();
+            }
+        });
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+            " - $" + $("#slider-range").slider("values", 1));
+    });
+
+    $(function () {
+        $("#sqft").slider({
+            orientation: "horizontal"
+            , range: true
+            , values: [17, 67]
+            , slide: function (event, ui) {
+                $("#amountsqft").val("sqft" + ui.values[0] + " - sqft" + ui.values[1]);
+            }
+        });
+        $("#amountsqft").val("sqft" + $("#sqft").slider("values", 0) +
+            " - $" + $("#sqft").slider("values", 1));
+    });
+    
+
+    function send()
+        {
+            //alert("hi");
+            var data = $("#searchfilterproperty").serialize();
+
+            $.ajax(
+                {
+                    method:"get",
+                    url:"index.php?"+data
+                }).done(function(data){
+                    //console.log(data);
+                }).success(function(data){
+                    //console.log(data);
+                    $("#projects_section").html(data);
+                }).fail(function(data){
+                    //console.log(data);            
+                });
+        }
+
+
+');?>

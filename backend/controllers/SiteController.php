@@ -5,7 +5,8 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use common\models\LoginForm;
+use backend\models\LoginForm;
+use backend\models\SignupForm;
 // use backend\models\Properties;
 // use backend\models\Amenities;
 // use backend\models\Propertyphoto;
@@ -33,8 +34,8 @@ class SiteController extends Controller
         'class' => AccessControl::className(),
         'rules' => [
         [
-        'actions' => ['login', 'error','fetch-update-data'],
-        'allow' => true,
+            'actions' => ['login', 'error','fetch-update-data','signup'],
+            'allow' => true,
         ],
         [
         'actions' => ['logout', 'index'],
@@ -50,6 +51,22 @@ class SiteController extends Controller
         ],
         ],
         ];
+    }
+
+    public function actionSignup()
+    {
+        $model = new SignupForm();
+        if ($model->load(Yii::$app->request->post())) {
+            if ($user = $model->signup()) {
+                if (Yii::$app->getUser()->login($user)) {
+                    return $this->goHome();
+                }
+            }
+        }
+    
+        return $this->render('signup', [
+                'model' => $model,
+        ]);
     }
 
     /**
@@ -90,8 +107,8 @@ class SiteController extends Controller
             return $this->goBack();
         } else {
             return $this->render('login', [
-                'model' => $model,
-                ]);
+            'model' => $model,
+            ]);
         }
     }
 

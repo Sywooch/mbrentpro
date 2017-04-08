@@ -48,6 +48,9 @@ class PropertiesSearch extends Properties
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => [
+              'pageSize' => 10,
+            ],
         ]);
 
         $this->load($params);
@@ -112,7 +115,9 @@ class PropertiesSearch extends Properties
             ->andFilterWhere(['like', 'unitname', $this->unitname])
             ->andFilterWhere(['like', 'unitdescription', $this->unitdescription])
             ->andFilterWhere(['like', 'rejectreason', $this->rejectreason])
-            ->andFilterWhere(['like', 'youtube_url', $this->youtube_url]);
+            ->andFilterWhere(['like', 'youtube_url', $this->youtube_url])
+            ->andFilterWhere(['>', 'minrent', $this->minrent])
+            ->andFilterWhere(['<', 'maxrent', $this->maxrent]);
             //->andFilterWhere(['=', 'approvalstatus', 1]);
 
         return $dataProvider;

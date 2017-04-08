@@ -10,17 +10,21 @@ use yii\widgets\Pjax;
 $this->title = 'Properties';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="properties-index">
+<div class="">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <!-- <h3 class="light-blue  padding-bottom20" style="margin-bottom: 0px;"><?= Html::encode($this->title) ?></h3>
+     --><?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
         <?= Html::a('Create Properties', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-<?php Pjax::begin(); ?>    <?= GridView::widget([
+<?php Pjax::begin(); ?>    
+<?= GridView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
+        //'filterModel' => $searchModel,
+        "summary"=>"",
+        "options" => ["class"=>""],
+        "tableOptions" => ["class"=>"table"],
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
@@ -79,4 +83,5 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
-<?php Pjax::end(); ?></div>
+<?php Pjax::end(); ?>
+</div>
