@@ -4,26 +4,31 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel common\models\PropertiesSearch */
+/* @var $searchModel common\models\TenantUsersSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Tenant/Landlords';
+$this->title = 'Tenant Users';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="container-fluid grey">
-<div class="container">
+<div class="tenant-users-index">
 
-    <h3 class="light-blue  padding-bottom20" style="margin-bottom: 0px;"><?= Html::encode($this->title) ?></h3>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <h1><?= Html::encode($this->title) ?></h1>
+    <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create New User', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Tenant Users', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-    </div>
-    <div class=" container borderradius " style=" margin-bottom: 20px;">
-    <div class="panel panel-default">
 <?php Pjax::begin(); ?>    
-<?= GridView::widget([
+<?php /* ListView::widget([
+        'dataProvider' => $dataProvider,
+        'itemOptions' => ['class' => 'item'],
+        'itemView' => function ($model, $key, $index, $widget) {
+            return Html::a(Html::encode($model->id), ['view', 'id' => $model->id]);
+        },
+    ])*/ ?>
+
+
+    <?= GridView::widget([
         'dataProvider' => $dataProvider,
         //'filterModel' => $searchModel,
         "summary"=>"",
@@ -32,8 +37,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            //'id',
+            'id',
             'firstname',
+            'lastname',
+            'address',
             'email',
             // 'state',
             // 'zip',
@@ -85,7 +92,4 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
-<?php Pjax::end(); ?>
-</div>
-</div>
-</div>
+<?php Pjax::end(); ?></div>

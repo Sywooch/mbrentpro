@@ -14,7 +14,7 @@ use common\models\City;
 <div class="tenant-users-form">
 
     <?php $form = ActiveForm::begin(); 
-print_r($model->getErrors());
+//print_r($model->getErrors());
     ?>
 
 <div class="row ">
