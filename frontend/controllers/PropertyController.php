@@ -75,27 +75,27 @@ class PropertyController extends Controller
             $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
             //echo "<pre>"; print_r($dataProvider);exit;
 
-            /*$newarr = [];
+            $newarr = [];
             foreach ($dataProvider->getModels() as $model) {
                 if($this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K") < 15000)
                 {
                     $newarr[]=$model;
                     //echo $this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K")."<br>";
                 }
-            }*/
-            //$provider = new ArrayDataProvider([
-                //'allModels' => $newarr,
+            }
+            $provider = new ArrayDataProvider([
+                'allModels' => $newarr,
                 /*'sort' => [
                     'attributes' => ['id', 'username', 'email'],
                 ],
                 'pagination' => [
                     'pageSize' => 10,
                 ],*/
-            //]);
+            ]);
             //echo "<pre>"; print_r($dataProvider);exit;
             return $this->renderPartial('ajax-index', [
                 'searchModel' => $searchModel,
-                'dataProvider' => $dataProvider,
+                'dataProvider' => $provider,
             ]);
         }
     }
