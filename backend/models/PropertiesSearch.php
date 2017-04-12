@@ -18,7 +18,7 @@ class PropertiesSearch extends Properties
     public function rules()
     {
         return [
-            [['id', 'propertyid', 'yearbuilt', 'numberunits', 'waitlist', 'nofee', 'unitid', 'isopentolease', 'rentisbasedonincome', 'bedrooms', 'fullbaths', 'halfbaths', 'ismobilityaccessible', 'isvisionaccessible', 'ishearingaccessible', 'isexists', 'leaseperiod', 'contactid', 'availablitystatus', 'approvalstatus', 'dogs', 'cats', 'furnished', 'elevator', 'pool', 'wheelchair_access', 'laundry_type', 'parking_type', 'parkingfee', 'visibilitystatus', 'usertype'], 'integer'],
+            [['id', 'propertyid', 'yearbuilt', 'numberunits', 'waitlist', 'nofee', 'unitid', 'isopentolease', 'rentisbasedonincome', 'bedrooms', 'fullbaths', 'halfbaths', 'ismobilityaccessible', 'isvisionaccessible', 'ishearingaccessible', 'isexists', 'leaseperiod', 'contactid', 'approvalstatus', 'dogs', 'cats', 'furnished', 'elevator', 'pool', 'wheelchair_access', 'laundry_type', 'parking_type', 'parkingfee', 'visibilitystatus', 'usertype'], 'integer'],
             [['description', 'address', 'city', 'state', 'zip', 'zip4', 'unittype', 'unitname', 'unitdescription', 'availabledate', 'rejectreason', 'youtube_url'], 'safe'],
             [['latitude', 'longitude', 'minrent', 'maxrent', 'mindeposit', 'maxdeposit', 'minsquarefeet', 'maxsquarefeet'], 'number'],
         ];
@@ -90,7 +90,6 @@ class PropertiesSearch extends Properties
             'availabledate' => $this->availabledate,
             'leaseperiod' => $this->leaseperiod,
             'contactid' => $this->contactid,
-            'availablitystatus' => $this->availablitystatus,
             'approvalstatus' => $this->approvalstatus,
             'dogs' => $this->dogs,
             'cats' => $this->cats,

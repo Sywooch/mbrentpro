@@ -66,7 +66,7 @@ class Properties extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'propertiesnew';
+        return 'properties';
     }
 
     /**
@@ -76,7 +76,7 @@ class Properties extends \yii\db\ActiveRecord
     {
         return [
             [['propertyid', 'description', 'address', 'city', 'state', 'zip', 'zip4', 'yearbuilt', 'numberunits', 'latitude', 'longitude', 'waitlist', 'isopentolease', 'rentisbasedonincome', 'minrent', 'maxrent', 'mindeposit', 'maxdeposit', 'bedrooms', 'fullbaths', 'halfbaths', 'minsquarefeet', 'maxsquarefeet', 'ismobilityaccessible', 'isvisionaccessible', 'ishearingaccessible', 'isexists', 'usertype'], 'required'],
-            [['propertyid', 'yearbuilt', 'numberunits', 'waitlist', 'nofee', 'unitid', 'isopentolease', 'rentisbasedonincome', 'bedrooms', 'fullbaths', 'halfbaths', 'ismobilityaccessible', 'isvisionaccessible', 'ishearingaccessible', 'isexists', 'leaseperiod', 'contactid', 'availablitystatus', 'approvalstatus', 'dogs', 'cats', 'furnished', 'elevator', 'pool', 'wheelchair_access', 'laundry_type', 'parking_type', 'parkingfee', 'visibilitystatus', 'usertype'], 'integer'],
+            [['propertyid', 'yearbuilt', 'numberunits', 'waitlist', 'nofee', 'unitid', 'isopentolease', 'rentisbasedonincome', 'bedrooms', 'fullbaths', 'halfbaths', 'ismobilityaccessible', 'isvisionaccessible', 'ishearingaccessible', 'isexists', 'leaseperiod', 'contactid', 'approvalstatus', 'dogs', 'cats', 'furnished', 'elevator', 'pool', 'wheelchair_access', 'laundry_type', 'parking_type', 'parkingfee', 'visibilitystatus', 'usertype'], 'integer'],
             [['description', 'unitdescription', 'rejectreason'], 'string'],
             [['latitude', 'longitude', 'minrent', 'maxrent', 'mindeposit', 'maxdeposit', 'minsquarefeet', 'maxsquarefeet'], 'number'],
             [['availabledate'], 'safe'],
@@ -129,7 +129,6 @@ class Properties extends \yii\db\ActiveRecord
             'availabledate' => 'Availabledate',
             'leaseperiod' => 'Leaseperiod',
             'contactid' => 'Contactid',
-            'availablitystatus' => 'Availablitystatus',
             'approvalstatus' => 'Approvalstatus',
             'rejectreason' => 'Rejectreason',
             'dogs' => 'Dogs',

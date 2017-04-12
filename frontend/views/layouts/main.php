@@ -4,6 +4,7 @@
 /* @var $content string */
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
@@ -101,11 +102,27 @@ AppAsset::register($this);
             <div class="col-xs-6 col-sm-6">
                 <ul class="nav navbar-nav pull-right " style="display:inline-flex;">
                     <li>
-                        <a class="white-txt inline" href="#about">Sign in </a>
+                        <?php
+                        if(Yii::$app->user->isGuest)
+                            echo '<a class="white-txt inline" href="'.Url::to(['/site/login']).'">Sign in </a>';
+                        else
+                        {
+                            //echo "<pre>"; print_r(Yii::$app->user);exit;
+                            echo Html::beginForm(['/site/logout'], 'post');
+                            echo Html::submitButton(
+                                'Logout (' . Yii::$app->user->identity->firstname . ')',
+                                ['class' => 'btn btn-link logout']
+                            );
+                            echo Html::endForm();
+                        }
+                        ?>
                     </li>
 
                     <li>
-                        <a class="white-txt inline" href="#about">Sign Up</a>
+                    <?php
+                        if(Yii::$app->user->isGuest)
+                        echo '<a class="white-txt inline" href="'.Url::to(['/site/signup']).'">Sign Up</a>';
+                    ?>
                     </li>
 
                 </ul>

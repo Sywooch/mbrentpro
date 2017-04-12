@@ -3,14 +3,15 @@
 namespace backend\models;
 
 //use backend\models\AdminUser;
-use yii\base\Model;
 use Yii;
+use yii\base\Model;
+use common\models\Users;
 
 /**
  * Signup form
  */
 class SignupForm extends Model {
-	public $username;
+	public $firstname;
 	public $email;
 	public $password;
 	
@@ -20,22 +21,22 @@ class SignupForm extends Model {
 	public function rules() {
 		return [ 
 				[ 
-						'username',
+						'firstname',
 						'filter',
 						'filter' => 'trim' 
 				],
 				[ 
-						'username',
+						'firstname',
 						'required' 
 				],
 				[ 
-						'username',
+						'firstname',
 						'unique',
-						'targetClass' => '\backend\models\AdminUser',
-						'message' => 'This username has already been taken.' 
+						'targetClass' => '\common\models\User',
+						'message' => 'This firstname has already been taken.' 
 				],
 				[ 
-						'username',
+						'firstname',
 						'string',
 						'min' => 2,
 						'max' => 255 
@@ -62,7 +63,7 @@ class SignupForm extends Model {
 				[ 
 						'email',
 						'unique',
-						'targetClass' => '\backend\models\AdminUser',
+						'targetClass' => '\common\models\User',
 						'message' => 'This email address has already been taken.' 
 				],
 				
@@ -85,13 +86,19 @@ class SignupForm extends Model {
 	 */
 	public function signup() {
 		if ($this->validate ()) {
-			$user = new AdminUser ();
-			$user->username = $this->username;
+			$user = new Users ();
+			$user->firstname = $this->firstname;
 			$user->email = $this->email;
 			$user->setPassword ( $this->password );
 			$user->generateAuthKey ();
-			if ($user->save ()) {
+			if ($user->save (false)) {
 				return $user;
+			}
+			else
+			{
+				echo "<pre>";
+				print_r($user);
+				exit;
 			}
 		}
 		

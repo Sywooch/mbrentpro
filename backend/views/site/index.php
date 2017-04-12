@@ -2,6 +2,7 @@
 use yii\helpers\Url;
 
 $this->title = '877 Rent Pro Admin';
+echo Yii::$app->user->identity->firstname;
 ?>
 <div class="site-index">
 

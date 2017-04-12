@@ -8,6 +8,8 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Signup';
 $this->params ['breadcrumbs'] [] = $this->title;
+//echo "<pre>"; 
+//print_r($model->getErrors());
 ?>
 <div class="login-box">
 	<div class="login-logo">
@@ -19,7 +21,7 @@ $this->params ['breadcrumbs'] [] = $this->title;
 
             <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
 
-                <?= $form->field($model, 'username')?>
+                <?= $form->field($model, 'firstname')?>
 
                 <?= $form->field($model, 'email')?>
 

@@ -18,8 +18,8 @@ use yii\web\IdentityInterface;
  * @property string $email
  * @property string $auth_key
  * @property integer $status
- * @property integer $created_at
- * @property integer $updated_at
+ * @property integer $created
+ * @property integer $updated
  * @property string $password write-only password
  */
 class AdminUser extends ActiveRecord implements IdentityInterface {
@@ -30,8 +30,8 @@ class AdminUser extends ActiveRecord implements IdentityInterface {
 	 * @inheritdoc
 	 */
 	public static function tableName() {
-		// return '{{%user}}';
-		return 'adminuser';
+		 return '{{%users}}';
+		//return 'Adminuser';
 	}
 	
 	/**

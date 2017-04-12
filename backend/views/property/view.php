@@ -64,7 +64,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'availabledate',
             'leaseperiod',
             'contactid',
-            'availablitystatus',
             'approvalstatus',
             'rejectreason:ntext',
             'dogs',

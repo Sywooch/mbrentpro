@@ -52,8 +52,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'unitdescription')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'isopentolease')->textInput() ?>
-
     <?= $form->field($model, 'rentisbasedonincome')->textInput() ?>
 
     <?= $form->field($model, 'minrent')->textInput() ?>
@@ -88,7 +86,7 @@ use yii\widgets\ActiveForm;
 
     <?php // $form->field($model, 'contactid')->textInput() ?>
 
-    <?= $form->field($model, 'availablitystatus')->textInput() ?>
+    <?= $form->field($model, 'isopentolease')->textInput() ?>
 
     <?= $form->field($model, 'approvalstatus')->hiddenInput(['value'=>1])->label(false); ?>
 

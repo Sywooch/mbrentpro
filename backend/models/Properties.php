@@ -43,7 +43,6 @@ use Yii;
  * @property string $availabledate
  * @property integer $leaseperiod
  * @property integer $contactid
- * @property integer $availablitystatus
  * @property integer $approvalstatus
  * @property string $rejectreason
  * @property integer $dogs
@@ -66,7 +65,7 @@ class Properties extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'propertiesnew';
+        return 'properties';
     }
 
     /**
@@ -76,7 +75,7 @@ class Properties extends \yii\db\ActiveRecord
     {
         return [
             [['propertyid', 'description', 'address', 'city', 'state', 'zip', 'zip4', 'yearbuilt', 'numberunits', 'latitude', 'longitude', 'waitlist', 'isopentolease', 'rentisbasedonincome', 'minrent', 'maxrent', 'mindeposit', 'maxdeposit', 'bedrooms', 'fullbaths', 'halfbaths', 'minsquarefeet', 'maxsquarefeet', 'ismobilityaccessible', 'isvisionaccessible', 'ishearingaccessible', 'isexists', 'usertype'], 'required'],
-            [['propertyid', 'yearbuilt', 'numberunits', 'waitlist', 'nofee', 'unitid', 'isopentolease', 'rentisbasedonincome', 'bedrooms', 'fullbaths', 'halfbaths', 'ismobilityaccessible', 'isvisionaccessible', 'ishearingaccessible', 'isexists', 'leaseperiod', 'contactid', 'availablitystatus', 'approvalstatus', 'dogs', 'cats', 'furnished', 'elevator', 'pool', 'wheelchair_access', 'laundry_type', 'parking_type', 'parkingfee', 'visibilitystatus', 'usertype'], 'integer'],
+            [['propertyid', 'yearbuilt', 'numberunits', 'waitlist', 'nofee', 'unitid', 'isopentolease', 'rentisbasedonincome', 'bedrooms', 'fullbaths', 'halfbaths', 'ismobilityaccessible', 'isvisionaccessible', 'ishearingaccessible', 'isexists', 'leaseperiod', 'contactid', 'approvalstatus', 'dogs', 'cats', 'furnished', 'elevator', 'pool', 'wheelchair_access', 'laundry_type', 'parking_type', 'parkingfee', 'visibilitystatus', 'usertype'], 'integer'],
             [['description', 'unitdescription', 'rejectreason'], 'string'],
             [['latitude', 'longitude', 'minrent', 'maxrent', 'mindeposit', 'maxdeposit', 'minsquarefeet', 'maxsquarefeet'], 'number'],
             [['availabledate'], 'safe'],
@@ -111,7 +110,7 @@ class Properties extends \yii\db\ActiveRecord
             'unittype' => 'Unittype',
             'unitname' => 'Unitname',
             'unitdescription' => 'Unitdescription',
-            'isopentolease' => 'Isopentolease',
+            'isopentolease' => 'Availablity Status',
             'rentisbasedonincome' => 'Rentisbasedonincome',
             'minrent' => 'Minrent',
             'maxrent' => 'Maxrent',
@@ -129,7 +128,6 @@ class Properties extends \yii\db\ActiveRecord
             'availabledate' => 'Availabledate',
             'leaseperiod' => 'Leaseperiod',
             'contactid' => 'Contactid',
-            'availablitystatus' => 'Availablitystatus',
             'approvalstatus' => 'Approvalstatus',
             'rejectreason' => 'Rejectreason',
             'dogs' => 'Dogs',

@@ -30,7 +30,7 @@
             [
                 'options' => ['class' => 'sidebar-menu'],
                 'items' => [
-                ['label' => 'Property Management', 'icon' => 'fa fa-file-code-o', 'url' => ['/property']],
+                ['label' => 'Property Management', 'icon' => 'fa fa-file-code-o', 'url' => ['/property/index',"PropertiesSearch[usertype]"=>2]],
                     /*['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
                     ['label' => 'Gii', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii']],
                     ['label' => 'Debug', 'icon' => 'fa fa-dashboard', 'url' => ['/debug']],

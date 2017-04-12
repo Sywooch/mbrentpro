@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
@@ -17,6 +18,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('Create Properties', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Own Properties', Url::toRoute(['property/index',"PropertiesSearch[usertype]"=>1]), ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Approved Properties', Url::toRoute(['property/index',"PropertiesSearch[approvalstatus]"=>1]), ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Rejected Properties', Url::toRoute(['property/index',"PropertiesSearch[approvalstatus]"=>0]), ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Pending Properties', Url::toRoute(['property/index',"PropertiesSearch[approvalstatus]"=>0]), ['class' => 'btn btn-success']) ?>
     </p>
 <?php Pjax::begin(); ?>    
 <?= GridView::widget([
