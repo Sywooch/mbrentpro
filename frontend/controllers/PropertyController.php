@@ -44,12 +44,13 @@ class PropertyController extends Controller
         foreach ($dataProvider->getModels() as $model) {
             //if($this->distance(17.670298,75.915255,17.6701965,75.9155166,"K")<3)
             //echo "Distance in KM: ".$this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K")."<br>";
-            if($this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K") < 15000)
+            if($this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K") < 10)
             {
                 $newarr[]=$model;
                 //echo $this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K")."<br>";
             }
         }
+        
         $provider = new ArrayDataProvider([
             'allModels' => $newarr,
             /*'sort' => [
@@ -73,16 +74,18 @@ class PropertyController extends Controller
             //echo "<pre>"; print_r(Yii::$app->request->queryParams);exit;
             $searchModel = new PropertiesSearch();
             $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-            //echo "<pre>"; print_r($dataProvider);exit;
+            //echo "<pre>"; print_r($dataProvider->getModels());exit;
 
             $newarr = [];
             foreach ($dataProvider->getModels() as $model) {
-                if($this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K") < 15000)
+                //if($this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K") < 3)
+                //echo "distance: ".$this->distance($searchModel->latitude,$searchModel->longitude,$model->latitude,$model->longitude,"K")."<br>";
+                if($this->distance($model->latitude,$model->longitude,$searchModel->latitude,$searchModel->longitude,"K") < 3)
                 {
                     $newarr[]=$model;
-                    //echo $this->distance($model->latitude,$model->longitude,17.6701965,75.9155166,"K")."<br>";
                 }
             }
+            //echo "<pre>"; print_r($newarr);exit;
             $provider = new ArrayDataProvider([
                 'allModels' => $newarr,
                 /*'sort' => [

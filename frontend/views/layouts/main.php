@@ -10,6 +10,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
+use yii\bootstrap\ActiveForm;
 
 AppAsset::register($this);
 ?>
@@ -104,7 +105,58 @@ AppAsset::register($this);
                     <li>
                         <?php
                         if(Yii::$app->user->isGuest)
+                        {
                             echo '<a class="white-txt inline" href="'.Url::to(['/site/login']).'">Sign in </a>';
+                            echo '<a class="white-txt inline" data-toggle="modal" data-target=".bs-example-modal-md" href="#about">Sign in</a>
+
+                        <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title sg-modal-title" id="myModalLabel">Sign In</h4>
+      </div>
+      <div class="modal-body sg-modal-title">
+       <div class="form-bottom">
+       ';
+       $model = new common\models\LoginForm;
+       $form = ActiveForm::begin(['id' => 'login-form','action'=>['site/login']]);
+        
+        echo $form->field($model, 'email')->textInput(['autofocus' => true]);
+
+        echo $form->field($model, 'password')->passwordInput();
+
+        echo $form->field($model, 'rememberMe')->checkbox();
+
+   '<div class="form-group">
+    <input type="LoginForm[email]" class="form-control"  placeholder="&#xf0e0; Email" required>
+  </div>
+  <div class="form-group">
+    <input type="LoginForm[password]" class="form-control"  placeholder="&#xf023; Password" required>
+  </div>
+  <div class="row sg-check-margin">
+  <div class="col-lg-12">
+  <div class="checkbox sg-check-box pull-left">
+    <label><input type="checkbox" name="LoginForm[rememberMe]"> Remember Me</label>
+  </div>
+  <div class="pull-right">
+      <a href="#">Forgot Password</a>
+  </div>
+  </div>
+  </div>
+  <div class="text-center">';
+    echo Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']);
+    echo Html::resetButton('Reset', ['class' => 'btn btn-danger']);
+  echo '</div>';
+ActiveForm::end();
+     echo '</div>
+      <div class="modal-footer sg-modal-title">
+        <p class="text-center">Not Registered? <a href="'.Url::to(['site/signup']).'">Create an Account</a></p>
+      </div>
+    </div>
+  </div>
+</div>';
+}
                         else
                         {
                             //echo "<pre>"; print_r(Yii::$app->user);exit;
@@ -314,18 +366,46 @@ AppAsset::register($this);
 
         $(document).on("ready", function()
         {
-            $("#search_button").click(function(e){
+            var placedata = [
+      {label:"Saat Rasta",value:"17.661458, 75.905067"},
+      {label:"MIDC Solapur",value:"17.657794, 75.936163"},
+      {label:"Karnik Nagar",value:"17.665895, 75.926288"},
+      {label:"Pune station",value:"18.528896, 73.874391"},
+      {label:"MG Road Pune",value:"18.513125, 73.878814"},
+      {label:"Swargate",value:"18.501832, 73.863591"},
+      
+    ];
+    console.log(placedata);
+            /*$("#search_button").click(function(e){
                 e.preventDefault();
                 //geocodeAddress(geocoder, map);
                 geocodeAddress();
-            });
+            });*/
 
-            $("#search_text").on("keyup", function(e){
+            /*$("#search_text").on("keyup", function(e){
                 geocodeAddress();
+            });*/
+
+            $( "#search_text" ).autocomplete({
+                source: placedata,
+                select: function(event, ui)
+                {
+                    var terms = ui.item.value.split(", ");
+                    //console.log(terms);
+                    $("#propertiessearch-latitude").val(terms[0]);
+                    $("#propertiessearch-longitude").val(terms[1]);
+                }
+                /*source: function( request, response ) {
+                    geocoder.geocode({'address': request.term}, function(results, status) {
+                    });
+                },*/
             });
         });
 
 function geocodeAddress() {
+    placedata = [];
+    
+
     geocoder = new google.maps.Geocoder();
     var address = $("#search_text").val();
     if(address != "" && address.length>=3)
@@ -335,20 +415,28 @@ function geocodeAddress() {
             //console.log(status);
             if (status === google.maps.GeocoderStatus.OK) {
                 for (var i = results.length - 1; i >= 0; i--) {
-                    console.log(results[i]['formatted_address']+": "+results[i]['geometry']['location']);
+                    //console.log(results[i]['formatted_address']+": "+results[i]['geometry']['location']);
+                    //results[i]['formatted_address']+": "+results[i]['geometry']['location'];
+                    var pd = {};
+                    pd.label = results[i]['formatted_address'];
+                    pd.value = results[i]['formatted_address'];
+                    placedata.push(pd);
                 }
+                console.log(placedata);
+
             }
             else {
-                alert('Geocode was not successful for the following reason: ' + status);
+                placedata = [];
+                //alert('Geocode was not successful for the following reason: ' + status);
             }
         });
+        return placedata;
     }
     else
     {
         //alert("enter area name in search box");
     }
     }
-
     </script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDASoM2I4ZJkcCFZVPb2Yp1OH8Z9WRJyE"
         async defer></script> -->

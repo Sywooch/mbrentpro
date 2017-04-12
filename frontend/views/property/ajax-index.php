@@ -6,7 +6,7 @@ use yii\widgets\LinkPager;
 use yii\data\Pagination;
 ?>
 <?= ListView::widget([
-        'pager' => ['class' => \kop\y2sp\ScrollPager::className(), 'enabledExtensions'=> Array( \kop\y2sp\ScrollPager::EXTENSION_TRIGGER, \kop\y2sp\ScrollPager::EXTENSION_SPINNER, \kop\y2sp\ScrollPager::EXTENSION_NONE_LEFT, \kop\y2sp\ScrollPager::EXTENSION_PAGING ),'triggerOffset'=>10],
+        //'pager' => ['class' => \kop\y2sp\ScrollPager::className(), 'enabledExtensions'=> Array( \kop\y2sp\ScrollPager::EXTENSION_TRIGGER, \kop\y2sp\ScrollPager::EXTENSION_SPINNER, \kop\y2sp\ScrollPager::EXTENSION_NONE_LEFT, \kop\y2sp\ScrollPager::EXTENSION_PAGING ),'triggerOffset'=>10],
         'dataProvider' => $dataProvider,
         'summary'=>'<div class="row padding10">
                     <div class="col-md-9 col-sm-9 col-xs-12">

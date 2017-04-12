@@ -115,7 +115,7 @@ class PropertiesSearch extends Properties
             ->andFilterWhere(['like', 'unitdescription', $this->unitdescription])
             ->andFilterWhere(['like', 'rejectreason', $this->rejectreason])
             ->andFilterWhere(['like', 'youtube_url', $this->youtube_url])
-            ->andFilterWhere(['>', 'minrent', $this->minrent])
+            ->andFilterWhere(['>=', 'minrent', $this->minrent])
             ->andFilterWhere(['<', 'maxrent', $this->maxrent]);
             //->andFilterWhere(['=', 'approvalstatus', 1]);
 

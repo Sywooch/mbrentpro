@@ -12,6 +12,7 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+        '//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css',
         'css/aos.css',
         'css/bootstrap.css',
         'css/font-awesome.css',
@@ -21,15 +22,17 @@ class AppAsset extends AssetBundle
         'css/swiper.css',
         'css/swiper.min-old.css',
         'css/swiper.min.css',
+        'css/bootstrap-multiselect.css',
     ];
     public $js = [
-        'jquery-1.12.4.js',
+        //'js/jquery-1.12.4.js',
         'https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js',
         'js/bootstrap.js',
         //'js/npm.js',
         'js/swiper.min.js',
         'js/owl.carousel.js',
         'js/aos.js',
+        'js/bootstrap-multiselect.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
