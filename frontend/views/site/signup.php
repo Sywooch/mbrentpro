@@ -17,6 +17,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row">
         <div class="col-lg-5">
+
+            <?php //$this->render('tenant-users\_form', ['model'=>new \common\models\TenantUsers()]);?>
             <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
 
                 <?= $form->field($model, 'firstname')->textInput(['autofocus' => true]) ?>

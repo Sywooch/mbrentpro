@@ -26,17 +26,6 @@ AppAsset::register($this);
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="icon" href="../../favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -101,12 +90,28 @@ AppAsset::register($this);
 
             </div>
             <div class="col-xs-6 col-sm-6">
-                <ul class="nav navbar-nav pull-right " style="display:inline-flex;">
+            <?php
+                        if(!Yii::$app->user->isGuest)
+                        {
+                echo '<ul class="nav navbar-top-links navbar-right white"><li class="dropdown"><a class="dropdown-toggle white-txt" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-user white-txt" style="font-size: 14px;margin-right: 10px;"></i>'.Yii::$app->user->identity->firstname." ".Yii::$app->user->identity->lastname.' <i class="fa fa-caret-down white-txt"> </i><ul class="dropdown-menu dropdown-messages nav-grey"><li><a href="#">My Profile</a></li><li><a href="#">My Favorites</a></li><li><a href="#">Manage Landlords</a></li><li class="divider" style="background-color:#6a6a6c;"></li><li><a class="" href="#">Logout</a></li></ul></li></ul>';
+
+                echo Html::beginForm(['/site/logout'], 'post');
+                echo Html::submitButton(
+                    'Logout (' . Yii::$app->user->identity->firstname . ')',
+                    ['class' => 'btn btn-link logout']
+                );
+                echo Html::endForm();
+
+
+                            }
+                            else {
+                                ?>
+                <ul class="nav navbar-nav navbar-right pull-right " style="display:inline-flex;">
                     <li>
                         <?php
                         if(Yii::$app->user->isGuest)
                         {
-                            echo '<a class="white-txt inline" href="'.Url::to(['/site/login']).'">Sign in </a>';
+                            //echo '<a class="white-txt inline" href="'.Url::to(['/site/login']).'">Sign in </a>';
                             echo '<a class="white-txt inline" data-toggle="modal" data-target=".bs-example-modal-md" href="#about">Sign in</a>
 
                         <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
@@ -120,13 +125,18 @@ AppAsset::register($this);
        <div class="form-bottom">
        ';
        $model = new common\models\LoginForm;
-       $form = ActiveForm::begin(['id' => 'login-form','action'=>['site/login']]);
+       $form = ActiveForm::begin(['id' => 'ajax-login-form','action'=>['site/ajax-login']]);
         
-        echo $form->field($model, 'email')->textInput(['autofocus' => true]);
+        echo $form->field($model, 'email')->textInput(["placeholder" => 'Email','type'=>'email'])->label(false);
 
-        echo $form->field($model, 'password')->passwordInput();
+        echo $form->field($model, 'password')->passwordInput(["placeholder" => 'Password'])->label(false);
 
+        echo '<div class="col-lg-12">';
         echo $form->field($model, 'rememberMe')->checkbox();
+        echo '<div class="pull-right">
+      <a href="#">Forgot Password</a>
+  </div>';
+        echo '</div>';
 
    '<div class="form-group">
     <input type="LoginForm[email]" class="form-control"  placeholder="&#xf0e0; Email" required>
@@ -178,7 +188,7 @@ ActiveForm::end();
                     </li>
 
                 </ul>
-
+<?php }?>
             </div>
 
         </div>
@@ -367,15 +377,15 @@ ActiveForm::end();
         $(document).on("ready", function()
         {
             var placedata = [
-      {label:"Saat Rasta",value:"17.661458, 75.905067"},
-      {label:"MIDC Solapur",value:"17.657794, 75.936163"},
-      {label:"Karnik Nagar",value:"17.665895, 75.926288"},
-      {label:"Pune station",value:"18.528896, 73.874391"},
-      {label:"MG Road Pune",value:"18.513125, 73.878814"},
-      {label:"Swargate",value:"18.501832, 73.863591"},
-      
-    ];
-    console.log(placedata);
+              {label:"Saat Rasta",value:"17.661458, 75.905067"},
+              {label:"MIDC Solapur",value:"17.657794, 75.936163"},
+              {label:"Karnik Nagar",value:"17.665895, 75.926288"},
+              {label:"Pune station",value:"18.528896, 73.874391"},
+              {label:"MG Road Pune",value:"18.513125, 73.878814"},
+              {label:"Swargate",value:"18.501832, 73.863591"},
+              
+            ];
+    //console.log(placedata);
             /*$("#search_button").click(function(e){
                 e.preventDefault();
                 //geocodeAddress(geocoder, map);
@@ -395,15 +405,11 @@ ActiveForm::end();
                     $("#propertiessearch-latitude").val(terms[0]);
                     $("#propertiessearch-longitude").val(terms[1]);
                 }
-                /*source: function( request, response ) {
-                    geocoder.geocode({'address': request.term}, function(results, status) {
-                    });
-                },*/
             });
         });
 
-function geocodeAddress() {
-    placedata = [];
+    function geocodeAddress() {
+        placedata = [];
     
 
     geocoder = new google.maps.Geocoder();
@@ -438,6 +444,55 @@ function geocodeAddress() {
     }
     }
     </script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $( "#datepicker" ).datepicker({
+            dateFormat: "yy-mm-dd"
+        });
+        $('body').on('beforeSubmit', 'form#ajax-login-form', function () {
+            var form = $(this);
+            // return false if form still have some validation errors
+            if (form.find('.has-error').length) 
+            {
+                return false;
+            }
+            // submit form
+            $.ajax({
+            url    : form.attr('action'),
+            type   : 'post',
+            data   : form.serialize(),
+            success: function (response) 
+            {
+                var data = $.parseJSON(response);
+                $("#loginform-password").next("p").html("");
+                if(data.result == 1)
+                {
+                    window.location.href = "<?= Url::home(true)?>";
+                }
+                else
+                {
+                    console.log(data.error);
+                    if(data.error.hasOwnProperty("password"))
+                    {
+                        $("#loginform-password").next("p").html(data.error.password[0]);
+                    }
+                }
+                //var getupdatedata = $(response).find('#filter_id_test');
+                // $.pjax.reload('#note_update_id'); for pjax update
+                //$('#yiiikap').html(getupdatedata);
+                //console.log(getupdatedata);
+            },
+            error  : function () 
+            {
+                console.log('internal server error');
+            }
+            });
+            return false;
+         });
+    });
+</script>
+
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDASoM2I4ZJkcCFZVPb2Yp1OH8Z9WRJyE"
         async defer></script> -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHbbed7Sn9InZn4Gw5fJBLnnoee7hgrNM" type="text/javascript"></script>

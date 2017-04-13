@@ -87,15 +87,32 @@ class SiteController extends Controller
         }
 
         $model = new LoginForm();
-        //if ($model->load(Yii::$app->request->post()) && $model->login()) {
-        if ($model->load(Yii::$app->request->post())) {
-            echo "<pre>"; print_r($model);exit;
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+        //if ($model->load(Yii::$app->request->post())) {
+            //echo "<pre>"; print_r($model);exit;
             return $this->goBack();
         } else {
-            echo "<pre>"; print_r($model->getErrors());exit;
+            //echo "<pre>"; print_r($model->getErrors());exit;
             return $this->render('login', [
                 'model' => $model,
             ]);
+        }
+    }
+
+    public function actionAjaxLogin()
+    {
+        /*if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }*/
+
+        $model = new LoginForm();
+        $model->load(Yii::$app->request->post());
+        //echo "<pre>"; print_r($model);exit;
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            //return $this->goBack();
+            echo json_encode(['result'=>1]);
+        } else {
+            echo json_encode(['result'=>0, 'error'=>$model->getErrors()]);
         }
     }
 
@@ -149,7 +166,7 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionSignup()
+    /*public function actionSignup()
     {
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
@@ -161,6 +178,22 @@ class SiteController extends Controller
         }
 
         return $this->render('signup', [
+            'model' => $model,
+        ]);
+    }*/
+
+    public function actionSignup()
+    {
+        $model = new SignupForm();
+        if ($model->load(Yii::$app->request->post())) {
+            if ($user = $model->signup()) {
+                if (Yii::$app->getUser()->login($user)) {
+                    return $this->goHome();
+                }
+            }
+        }
+
+        return $this->render('signupnew', [
             'model' => $model,
         ]);
     }
